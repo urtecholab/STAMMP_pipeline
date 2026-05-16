@@ -42,6 +42,11 @@ AGORA_MINIMAP_DB = config.get("agora_db",   "/mnt/zarrinpar/scratch/rrichter/202
 # in parallel. Setting THREADS=32 serializes everything (one job fills the budget).
 # Override via --config threads=N if your batch size or core count differs.
 THREADS          = config.get("threads",    8)
+# kraken_extract runs extract_kraken_reads.py (single-threaded Python) before pigz.
+# Pigz doesn't benefit beyond ~4 threads for typical metagenomic file sizes, and
+# the Python step uses only 1 core regardless. Lower allocation lets Snakemake
+# schedule more concurrent jobs without wasting the thread budget on idle cores.
+THREADS_EXTRACT  = min(THREADS, 4)
 
 # ── Helper scripts (live inside the STAMMP install — no copies needed) ────────
 FILTER_SCRIPTS = os.path.join(STAMMP_DIR, "agora_filter_scripts")
@@ -147,7 +152,7 @@ rule kraken_extract:
     output:
         u1 = protected(KRAKEN_DIR + "/{sample}_1.fastq.gz"),
         u2 = protected(KRAKEN_DIR + "/{sample}_2.fastq.gz")
-    threads: THREADS
+    threads: THREADS_EXTRACT
     shell:
         """
         python {FILTER_SCRIPTS}/extract_kraken_reads.py \
