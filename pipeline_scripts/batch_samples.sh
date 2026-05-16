@@ -25,7 +25,7 @@ fi
 DIR="$1"
 R1_PATTERN="$2"
 # Use $3 if provided, otherwise default to 5
-BATCH_SIZE="${3:-5}"
+BATCH_SIZE="${3:-6}"
 
 # Confirm the target directory exists before proceeding
 if [ ! -d "$DIR" ]; then
