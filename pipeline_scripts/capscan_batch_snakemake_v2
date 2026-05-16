@@ -1,73 +1,78 @@
 import glob, os, re
 
-# Auto-detect sample prefixes based on demuxed FASTQs
+# ── Config ────────────────────────────────────────────────────────────────────
+#
+# Required via --config (set by run_batched_snakemakes.sh):
+#   stammp_dir   Path to the STAMMP install directory
+#   output_dir   Project output root (e.g. /home/maholton/scratch/projects/2026_HIV_MASLD_STAMMP)
+#   sample_list  Path to file listing all sample names (one per line, no extension)
+#   raw_dir      Path to this batch's raw FASTQ directory (one batch_XX/ at a time)
+#
+# Optional overrides (cluster-specific databases):
+#   kraken_db    Path to Kraken2 database
+#   bowtie_idx   Path to Bowtie2 index prefix
+#   agora_db     Path to AGORA minimap2 index
+#   threads      Number of threads (default: 32)
 
-#RENAME SAMPLES WITH THIS
-#for f in *.fastq.gz; do
-#    new=$(echo "$f" | sed -E 's/_S[0-9]+_L[0-9]+//; s/_001\.fastq\.gz$/.fastq.gz/')
-#    mv "$f" "$new"
-#done
+# Auto-detect STAMMP install from snakefile location if not passed explicitly
+_snakefile_dir = os.path.dirname(os.path.abspath(workflow.snakefile))
+STAMMP_DIR = config.get("stammp_dir", os.path.dirname(_snakefile_dir))
 
-#Make symbolic links with this
-#for f in /home/gurtecho/projects/2025/Fibrosis/raw_data/*; do
-#    ln -s "$f" .
-#done
+# Project output root — all pipeline outputs live under here
+OUTPUT_DIR = config.get("output_dir", os.path.join(os.getcwd(), "stammp_output"))
 
+# Master sample list (all samples across all batches; used for the final merge check)
+SAMPLE_LIST = config.get("sample_list", os.path.join(OUTPUT_DIR, "outputs/agora_outputs/sample_list.txt"))
 
+# Raw FASTQ directory for this batch (passed per-batch by run_batched_snakemakes.sh)
+RAW_DIR = config.get("raw_dir", "")
 
+# ── Output directories (all absolute, under OUTPUT_DIR) ───────────────────────
+AGORA_BASE  = os.path.join(OUTPUT_DIR, "outputs", "agora_outputs")
+CLEAN_DIR   = os.path.join(AGORA_BASE, "cleaned")
+KRAKEN_DIR  = os.path.join(AGORA_BASE, "kraken_filtered")
+BOWTIE_DIR  = os.path.join(AGORA_BASE, "bowtie_filtered")
+AGORA_DIR   = os.path.join(AGORA_BASE, "AGORA_mapped")
 
+# ── External databases (cluster-specific; override via --config if needed) ────
+KRAKEN_DB        = config.get("kraken_db",  "/mnt/zarrinpar/Pynchon/Databases/kraken2/k2_standard_08_GB_20250714")
+BOWTIE_IDX       = config.get("bowtie_idx", "/mnt/zarrinpar/Pynchon/Databases/human_genome/bowtie_CHM13plusY/chm13.draft_v1.0_plusY/chm13.draft_v1.0_plusY")
+AGORA_MINIMAP_DB = config.get("agora_db",   "/mnt/zarrinpar/scratch/rrichter/20250120_download_microbiome/db/agora_genomes.idx")
+# Threads per rule. With --cores 32 and THREADS=8, Snakemake runs up to 4 samples
+# in parallel. Setting THREADS=32 serializes everything (one job fills the budget).
+# Override via --config threads=N if your batch size or core count differs.
+THREADS          = config.get("threads",    8)
 
-# Paths & indices
-RAW_DIR = config.get("raw_dir", "/home/maholton/archive/raw_data/2026/capscan_STAMMP_pipeline/inputs/agora_inputs/batch_01")
+# ── Helper scripts (live inside the STAMMP install — no copies needed) ────────
+FILTER_SCRIPTS = os.path.join(STAMMP_DIR, "agora_filter_scripts")
 
-CLEAN_DIR     = "outputs/agora_outputs/cleaned"
-KRAKEN_DIR    = "outputs/agora_outputs/kraken_filtered"
-BOWTIE_DIR    = "outputs/agora_outputs/bowtie_filtered"
-AGORA_DIR     = "outputs/agora_outputs/AGORA_mapped"
-
-KRAKEN_DB     = "/mnt/zarrinpar/Pynchon/Databases/kraken2/k2_standard_08_GB_20250714"
-BOWTIE_IDX    = "/mnt/zarrinpar/Pynchon/Databases/human_genome/bowtie_CHM13plusY/chm13.draft_v1.0_plusY/chm13.draft_v1.0_plusY"
-AGORA_MINIMAP_DB    = "/mnt/zarrinpar/scratch/rrichter/20250120_download_microbiome/db/agora_genomes.idx"
-THREADS       = 32
-
-
-SAMPLE_LIST = "/home/maholton/mah_note/capscan_intestine_compare/list_samples.txt"
-
-# All samples from the master list (for the final merge rule)
+# ── Sample discovery ──────────────────────────────────────────────────────────
 with open(SAMPLE_LIST) as f:
     ALL_SAMPLES = [line.strip() for line in f if line.strip()]
 
+MERGE_ONLY = config.get("merge_only", False)
 
 def sample_names():
     files = glob.glob(RAW_DIR + "/*_1.fastq.gz")
-    return [re.sub(r"_1.fastq\.gz$", "", os.path.basename(f)) for f in files]
-
-
-# Merge-only mode: skip sample discovery entirely
-MERGE_ONLY = config.get("merge_only", False)
+    return [re.sub(r"_1\.fastq\.gz$", "", os.path.basename(f)) for f in files]
 
 if MERGE_ONLY:
     SAMPLES = []
     SAMPLES_MISSING = []
 else:
-    RAW_DIR = config.get("raw_dir", "/home/maholton/archive/raw_data/2026/capscan_STAMMP_pipeline/inputs/agora_inputs/batch_01")
-    # Samples present in THIS batch's raw dir
     SAMPLES = sample_names()
-    # Missing = present in raw dir but no counts yet
     SAMPLES_MISSING = [s for s in SAMPLES if not os.path.exists(AGORA_DIR + f"/{s}.counts")]
 
-# Only include merge if ALL samples from the master list have counts
 ALL_SAMPLES_DONE = all(
     os.path.exists(AGORA_DIR + f"/{s}.counts") for s in ALL_SAMPLES
 )
 
+# ── Rules ─────────────────────────────────────────────────────────────────────
 
 rule all:
     input:
         expand(AGORA_DIR + "/{sample}.counts", sample=SAMPLES_MISSING),
         *([AGORA_DIR + "/agora_mapped_counts.csv"] if ALL_SAMPLES_DONE and not SAMPLES_MISSING else [])
-        #expand(AGORA_DIR + "/{sample}.counts", sample=SAMPLES),
-        #AGORA_DIR + "/agora_mapped_counts.csv"
 
 rule qc_reads:
     input:
@@ -83,7 +88,7 @@ rule qc_reads:
         fastp \
           -i {input.r1} -I {input.r2} \
           -o {output.o1} -O {output.o2} \
-          --thread {threads} 
+          --thread {threads}
         """
 
 rule bowtie_filter:
@@ -105,13 +110,10 @@ rule bowtie_filter:
           --un-conc {BOWTIE_DIR}/{wildcards.sample}_temp \
           -S /dev/null
 
-        # Fix naming to match flow
         mv {BOWTIE_DIR}/{wildcards.sample}_temp.1 {output.b1}
         mv {BOWTIE_DIR}/{wildcards.sample}_temp.2 {output.b2}
 
-        # Clean up temp files
         rm -f {BOWTIE_DIR}/temp.1 {BOWTIE_DIR}/temp.2
-        # Clean up fastp output (no longer needed)
         """
 
 rule kraken_classify:
@@ -136,20 +138,19 @@ rule kraken_classify:
         """
 
 rule kraken_extract:
-    """Extract non-human reads from .kraken, compress to final FASTQ.gz"""
+    """Extract non-eukarya reads from .kraken, compress to final FASTQ.gz"""
     input:
         kraken = KRAKEN_DIR + "/{sample}.kraken",
         b1     = BOWTIE_DIR + "/{sample}_1.fastq",
         b2     = BOWTIE_DIR + "/{sample}_2.fastq",
-        report = KRAKEN_DIR + "/{sample}.report"   # <-- REQUIRED for --include-children
+        report = KRAKEN_DIR + "/{sample}.report"
     output:
-        u1     = protected(KRAKEN_DIR + "/{sample}_1.fastq.gz"),
-        u2     = protected(KRAKEN_DIR + "/{sample}_2.fastq.gz")
+        u1 = protected(KRAKEN_DIR + "/{sample}_1.fastq.gz"),
+        u2 = protected(KRAKEN_DIR + "/{sample}_2.fastq.gz")
     threads: THREADS
     shell:
         """
-        # Extract non-eukarya reads (taxid 2759 excluded)
-        python agora_filter_scripts/extract_kraken_reads.py \
+        python {FILTER_SCRIPTS}/extract_kraken_reads.py \
           -k {input.kraken} \
           -s1 {input.b1} -s2 {input.b2} \
           -r {input.report} \
@@ -157,19 +158,17 @@ rule kraken_extract:
           -o2 {KRAKEN_DIR}/{wildcards.sample}_temp_2.fastq \
           --taxid 2759 --exclude --include-children --fastq-output
 
-        # Compress to final outputs
         pigz -p {threads} -c {KRAKEN_DIR}/{wildcards.sample}_temp_1.fastq > {output.u1}
         pigz -p {threads} -c {KRAKEN_DIR}/{wildcards.sample}_temp_2.fastq > {output.u2}
 
-        # Clean up temp files
-        rm -f {KRAKEN_DIR}/{wildcards.sample}_temp_1.fastq {KRAKEN_DIR}/{wildcards.sample}_temp_2.fastq
+        rm -f {KRAKEN_DIR}/{wildcards.sample}_temp_1.fastq \
+              {KRAKEN_DIR}/{wildcards.sample}_temp_2.fastq
         """
-
 
 rule minimap_agora_count:
     input:
-        r1     = KRAKEN_DIR + "/{sample}_1.fastq.gz",
-        r2     = KRAKEN_DIR + "/{sample}_2.fastq.gz",
+        r1 = KRAKEN_DIR + "/{sample}_1.fastq.gz",
+        r2 = KRAKEN_DIR + "/{sample}_2.fastq.gz",
         db = AGORA_MINIMAP_DB
     output:
         AGORA_DIR + "/{sample}.counts"
@@ -186,18 +185,6 @@ rule minimap_agora_count:
         rm -f {CLEAN_DIR}/{wildcards.sample}_2.fastq.gz
         rm -f {BOWTIE_DIR}/{wildcards.sample}_1.fastq
         rm -f {BOWTIE_DIR}/{wildcards.sample}_2.fastq
-        """
-
-
-# revised version to only run the final merge if all count files are present
-rule agora_mapped_counts_table:
-    input:
-        expand(AGORA_DIR + "/{sample}.counts", sample=ALL_SAMPLES)
-    output:
-        AGORA_DIR + "/agora_mapped_counts.csv"
-    shell:
-        r"""
-        python agora_filter_scripts/count_files_to_table.py {input} > {output}
         """
 
 

@@ -14,7 +14,10 @@ print("Default solver:", cobra.Configuration().solver)
 import sys
 import os
 
-sys.path.append('..')
+# Locate the STAMMP install directory from this script's path, so MICOM_pipeline.py
+# can be called from any working directory without breaking the utils import.
+_stammp_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(_stammp_dir)
 from utils import analysis
 
 warnings.filterwarnings('ignore')
