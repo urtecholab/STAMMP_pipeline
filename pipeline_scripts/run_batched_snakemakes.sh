@@ -1,5 +1,11 @@
 #!/bin/bash
-# run_batched_snakemakes.sh — STAMMP batched AGORA + MICOM pipeline
+# run_batched_snakemakes.sh — STAMMP batched AGORA pipeline
+#
+# Runs the AGORA/Snakemake stage only (qc -> bowtie -> kraken -> minimap -> counts,
+# then merge). MICOM requires a separate conda environment (micomPy310) and is not
+# run by this script — this script does not switch conda environments mid-run, so
+# it always stops after producing the merged counts table. Run MICOM_pipeline.py
+# by hand afterward, in the micomPy310 environment. See README.md for the command.
 #
 # Usage:
 #   run_batched_snakemakes.sh --input <raw_data_dir> --output <project_dir> [OPTIONS]
@@ -12,7 +18,6 @@
 #
 # Optional:
 #   --cores   <N>     Snakemake threads per batch (default: 32)
-#   --skip-micom      Do not run MICOM_pipeline.py after the merge step
 #
 # STAMMP install directory is auto-detected from this script's own location.
 # To share STAMMP, zip the entire STAMMP directory; collaborators unzip and call
@@ -39,7 +44,6 @@ THREADS_PER_SAMPLE=8  # threads allocated per rule; controls how many samples ru
                       # Setting this equal to CORES serializes everything.
 BATCH_DIR=""
 PROJECT_DIR=""
-RUN_MICOM=true
 
 # ── Parse arguments ───────────────────────────────────────────────────────────
 while [[ $# -gt 0 ]]; do
@@ -47,10 +51,9 @@ while [[ $# -gt 0 ]]; do
         --input)      BATCH_DIR="$2";    shift 2 ;;
         --output)     PROJECT_DIR="$2";  shift 2 ;;
         --cores)      CORES="$2";        shift 2 ;;
-        --skip-micom) RUN_MICOM=false;   shift   ;;
         *)
             echo "Unknown argument: $1"
-            echo "Usage: $(basename "$0") --input <raw_data_dir> --output <project_dir> [--cores N] [--skip-micom]"
+            echo "Usage: $(basename "$0") --input <raw_data_dir> --output <project_dir> [--cores N]"
             exit 1
             ;;
     esac
@@ -58,7 +61,7 @@ done
 
 if [[ -z "$BATCH_DIR" || -z "$PROJECT_DIR" ]]; then
     echo "ERROR: --input and --output are required."
-    echo "Usage: $(basename "$0") --input <raw_data_dir> --output <project_dir> [--cores N] [--skip-micom]"
+    echo "Usage: $(basename "$0") --input <raw_data_dir> --output <project_dir> [--cores N]"
     exit 1
 fi
 
@@ -79,7 +82,6 @@ mkdir -p "${AGORA_OUT}/kraken_filtered"
 mkdir -p "${AGORA_OUT}/bowtie_filtered"
 mkdir -p "${AGORA_MAPPED}"
 mkdir -p "${PROJECT_DIR}/outputs/humann_outputs"
-mkdir -p "${PROJECT_DIR}/outputs/micom_outputs"
 
 echo "STAMMP directory : ${STAMMP_DIR}"
 echo "Input (batches)  : ${BATCH_DIR}"
@@ -158,29 +160,14 @@ fi
 echo "Merge complete: ${COUNTS_TABLE}"
 echo ""
 
-# ── Step 3: MICOM (requires the merged counts table from step 2) ──────────────
-# micom_references lives inside the STAMMP install — no copies needed.
-if [[ "$RUN_MICOM" == true ]]; then
-    echo "=========================================="
-    echo "Running MICOM pipeline..."
-    echo "=========================================="
-
-    if ! python "${STAMMP_DIR}/pipeline_scripts/MICOM_pipeline.py" \
-        --agora     "${COUNTS_TABLE}" \
-        --output    "${PROJECT_DIR}/outputs" \
-        --reference "${STAMMP_DIR}/micom_references"; then
-        echo "ERROR: MICOM pipeline failed."
-        exit 1
-    fi
-
-    echo "MICOM complete."
-    echo ""
-fi
-
 echo "=========================================="
-echo "Pipeline finished."
-echo "All outputs in: ${PROJECT_DIR}/outputs"
-echo "  agora_outputs/  -> AGORA mapped counts and filtered reads"
-echo "  humann_outputs/ -> (HUMAnN outputs, if run separately)"
-echo "  micom_outputs/  -> MICOM models and growth results"
+echo "AGORA stage finished."
+echo "Counts table: ${COUNTS_TABLE}"
+echo ""
+echo "To run MICOM, switch to the micomPy310 environment and run:"
+echo "  conda activate <path-to-micomPy310-env>"
+echo "  python ${STAMMP_DIR}/pipeline_scripts/MICOM_pipeline.py \\"
+echo "      --agora     ${COUNTS_TABLE} \\"
+echo "      --output    ${PROJECT_DIR}/outputs \\"
+echo "      --reference ${STAMMP_DIR}/micom_references"
 echo "=========================================="

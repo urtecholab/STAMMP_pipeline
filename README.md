@@ -61,7 +61,7 @@ The MICOM reference files (`agora_species_103.qza`, `western_diet_gut_agora.qza`
 ```
 STAMMP/
 ├── pipeline_scripts/
-│   ├── run_batched_snakemakes.sh       Orchestration script — runs all batches, merges, launches MICOM
+│   ├── run_batched_snakemakes.sh       Orchestration script — runs all batches, merges counts (AGORA stage only)
 │   ├── capscan_batch_snakemake_v2      Snakemake workflow (qc → bowtie → kraken → minimap → counts)
 │   ├── batch_samples.sh                Splits a flat FASTQ directory into batch_01/, batch_02/, ...
 │   └── MICOM_pipeline.py               Normalizes counts, builds models, runs growth simulations
@@ -82,7 +82,7 @@ STAMMP/
 
 ## How to run
 
-> **Note on `--skip-micom`:** `run_batched_snakemakes.sh` calls `MICOM_pipeline.py` with whatever `python` is on `PATH` at the time — it does not switch conda environments partway through. Since the AGORA stage and the MICOM stage require two different, non-mergeable environments (see [Dependencies](#dependencies)), running the script *without* `--skip-micom` will fail at the MICOM step unless your active environment happens to have both dependency sets installed. The worked example below runs the two stages separately, each in its correct environment, which is the combination that actually works.
+`run_batched_snakemakes.sh` only runs the AGORA/Snakemake stage. It does not launch MICOM, because MICOM requires a separate conda environment (`micomPy310`) and the script does not switch environments mid-run (see [Dependencies](#dependencies)). Run MICOM as its own step afterward, in its own environment — Step 3 below.
 
 ### Worked example
 
@@ -112,8 +112,7 @@ conda activate /home/maholton/.conda/envs/maholton/envs/ut-agora_pipeline_clone
 bash pipeline_scripts/run_batched_snakemakes.sh \
     --input  ~/data/example_project/raw_fastqs \
     --output ~/data/example_project \
-    --cores 32 \
-    --skip-micom
+    --cores 32
 ```
 
 This creates the output directory structure, auto-generates a sample list, runs each batch through Snakemake sequentially, and merges the per-sample `.counts` files into `~/data/example_project/outputs/agora_outputs/AGORA_mapped/agora_mapped_counts.csv`.
@@ -141,7 +140,6 @@ Growth simulation results land at `~/data/example_project/outputs/micom_outputs/
 | `--input <dir>` | Yes | | Directory containing `batch_01/`, `batch_02/`, ... |
 | `--output <dir>` | Yes | | Project root; all outputs written under `<dir>/outputs/` |
 | `--cores <N>` | No | 32 | Total thread budget passed to Snakemake |
-| `--skip-micom` | No | off | Stop after the AGORA merge step; do not run MICOM |
 
 ### Arguments (`MICOM_pipeline.py`)
 
