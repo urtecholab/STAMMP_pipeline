@@ -82,31 +82,59 @@ STAMMP/
 
 ## How to run
 
-### Step 1 — Prepare your data
+> **Note on `--skip-micom`:** `run_batched_snakemakes.sh` calls `MICOM_pipeline.py` with whatever `python` is on `PATH` at the time — it does not switch conda environments partway through. Since the AGORA stage and the MICOM stage require two different, non-mergeable environments (see [Dependencies](#dependencies)), running the script *without* `--skip-micom` will fail at the MICOM step unless your active environment happens to have both dependency sets installed. The worked example below runs the two stages separately, each in its correct environment, which is the combination that actually works.
 
-Download paired-end reads from ENA or another source. Place all `*_1.fastq.gz` / `*_2.fastq.gz` files in a single flat directory, then split them into batches:
+### Worked example
+
+This example assumes you have already cloned STAMMP and have paired-end FASTQ files sitting in a directory — substitute your own paths for `~/data/example_project`.
+
+**Step 0 — Enter the repository**
 
 ```bash
-bash pipeline_scripts/batch_samples.sh <fastq_dir> '*_1.fastq.gz' 5
+cd ~/STAMMP
 ```
 
-This creates `batch_01/`, `batch_02/`, ... subdirectories inside `<fastq_dir>`, each containing up to 5 sample pairs. The default batch size is 6 if the third argument is omitted.
+**Step 1 — Batch the raw FASTQ files**
 
-### Step 2 — Run the full pipeline
+Your raw reads live in a flat directory, e.g. `~/data/example_project/raw_fastqs/`, containing pairs like `sample01_1.fastq.gz` / `sample01_2.fastq.gz`. `batch_samples.sh` moves (not copies) them into numbered `batch_XX/` subdirectories in place:
 
-Activate the AGORA environment and call the orchestration script with the batch parent directory and a project output directory:
+```bash
+bash pipeline_scripts/batch_samples.sh ~/data/example_project/raw_fastqs '*_1.fastq.gz' 5
+```
+
+This creates `~/data/example_project/raw_fastqs/batch_01/`, `batch_02/`, ... each with up to 5 sample pairs. Omit the trailing `5` to use the default batch size of 6.
+
+**Step 2 — Run the AGORA (Snakemake) stage**
 
 ```bash
 conda activate /home/maholton/.conda/envs/maholton/envs/ut-agora_pipeline_clone
 
 bash pipeline_scripts/run_batched_snakemakes.sh \
-    --input  <fastq_dir> \
-    --output <project_dir>
+    --input  ~/data/example_project/raw_fastqs \
+    --output ~/data/example_project \
+    --cores 32 \
+    --skip-micom
 ```
 
-The script will: create the output directory structure, auto-generate a sample list, run each batch through Snakemake sequentially, merge the resulting count files, and launch MICOM. All outputs land under `<project_dir>/outputs/`.
+This creates the output directory structure, auto-generates a sample list, runs each batch through Snakemake sequentially, and merges the per-sample `.counts` files into `~/data/example_project/outputs/agora_outputs/AGORA_mapped/agora_mapped_counts.csv`.
 
-### Arguments
+**Step 3 — Run the MICOM stage**
+
+Switch environments, then call `MICOM_pipeline.py` directly:
+
+```bash
+conda activate /home/maholton/.conda/envs/maholton/envs/micomPy310
+
+/home/maholton/.conda/envs/maholton/envs/micomPy310/bin/python \
+    pipeline_scripts/MICOM_pipeline.py \
+    --agora     ~/data/example_project/outputs/agora_outputs/AGORA_mapped/agora_mapped_counts.csv \
+    --output    ~/data/example_project/outputs \
+    --reference micom_references
+```
+
+Growth simulation results land at `~/data/example_project/outputs/micom_outputs/models/res_western.zip`.
+
+### Arguments (`run_batched_snakemakes.sh`)
 
 | Argument | Required | Default | Description |
 |---|---|---|---|
@@ -115,19 +143,32 @@ The script will: create the output directory structure, auto-generate a sample l
 | `--cores <N>` | No | 32 | Total thread budget passed to Snakemake |
 | `--skip-micom` | No | off | Stop after the AGORA merge step; do not run MICOM |
 
-### Running MICOM separately
+### Arguments (`MICOM_pipeline.py`)
 
-If you ran with `--skip-micom` or need to rerun MICOM alone, switch environments and call the script directly:
+| Argument | Required | Description |
+|---|---|---|
+| `-a, --agora <file>` | Yes | Merged AGORA count matrix CSV (output of Step 2) |
+| `-o, --output <dir>` | Yes | Project `outputs/` directory; `micom_outputs/` is created underneath |
+| `-r, --reference <dir>` | Yes | Path to `micom_references/` (ships with this repo) |
+
+### Running a single batch manually
+
+To debug or rerun one batch directly with `snakemake`, without going through the orchestration script:
 
 ```bash
-conda activate /home/maholton/.conda/envs/maholton/envs/micomPy310
+conda activate /home/maholton/.conda/envs/maholton/envs/ut-agora_pipeline_clone
 
-/home/maholton/.conda/envs/maholton/envs/micomPy310/bin/python \
-    pipeline_scripts/MICOM_pipeline.py \
-    --agora     <project_dir>/outputs/agora_outputs/AGORA_mapped/agora_mapped_counts.csv \
-    --output    <project_dir>/outputs \
-    --reference micom_references
+snakemake -s pipeline_scripts/capscan_batch_snakemake_v2 \
+    --cores 32 \
+    --rerun-incomplete \
+    --config \
+        raw_dir=~/data/example_project/raw_fastqs/batch_01 \
+        output_dir=~/data/example_project \
+        sample_list=~/data/example_project/outputs/agora_outputs/sample_list.txt \
+        threads=8
 ```
+
+`sample_list.txt` must already exist — it's normally auto-generated by `run_batched_snakemakes.sh` (one sample ID per line, no extension). `threads=8` with `--cores 32` lets Snakemake schedule up to 4 samples in parallel; see [Parallelism](#parallelism) below.
 
 ---
 
