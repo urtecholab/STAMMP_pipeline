@@ -1,0 +1,203 @@
+import glob, os, re
+
+# Auto-detect sample prefixes based on demuxed FASTQs
+
+#RENAME SAMPLES WITH THIS
+#for f in *.fastq.gz; do
+#    new=$(echo "$f" | sed -E 's/_S[0-9]+_L[0-9]+//; s/_001\.fastq\.gz$/.fastq.gz/')
+#    mv "$f" "$new"
+#done
+
+#Make symbolic links with this
+#for f in /home/gurtecho/projects/2025/Fibrosis/raw_data/*; do
+#    ln -s "$f" .
+#done
+
+
+
+
+
+# Paths & indices
+RAW_DIR = config.get("raw_dir", "/home/maholton/archive/raw_data/2026/capscan_STAMMP_pipeline/inputs/agora_inputs/batch_01")
+
+CLEAN_DIR     = "outputs/agora_outputs/cleaned"
+KRAKEN_DIR    = "outputs/agora_outputs/kraken_filtered"
+BOWTIE_DIR    = "outputs/agora_outputs/bowtie_filtered"
+AGORA_DIR     = "outputs/agora_outputs/AGORA_mapped"
+
+KRAKEN_DB     = "/mnt/zarrinpar/Pynchon/Databases/kraken2/k2_standard_08_GB_20250714"
+BOWTIE_IDX    = "/mnt/zarrinpar/Pynchon/Databases/human_genome/bowtie_CHM13plusY/chm13.draft_v1.0_plusY/chm13.draft_v1.0_plusY"
+AGORA_MINIMAP_DB    = "/mnt/zarrinpar/scratch/rrichter/20250120_download_microbiome/db/agora_genomes.idx"
+THREADS       = 32
+
+
+SAMPLE_LIST = "/home/maholton/mah_note/capscan_intestine_compare/list_samples.txt"
+
+# All samples from the master list (for the final merge rule)
+with open(SAMPLE_LIST) as f:
+    ALL_SAMPLES = [line.strip() for line in f if line.strip()]
+
+
+def sample_names():
+    files = glob.glob(RAW_DIR + "/*_1.fastq.gz")
+    return [re.sub(r"_1.fastq\.gz$", "", os.path.basename(f)) for f in files]
+
+
+# Merge-only mode: skip sample discovery entirely
+MERGE_ONLY = config.get("merge_only", False)
+
+if MERGE_ONLY:
+    SAMPLES = []
+    SAMPLES_MISSING = []
+else:
+    RAW_DIR = config.get("raw_dir", "/home/maholton/archive/raw_data/2026/capscan_STAMMP_pipeline/inputs/agora_inputs/batch_01")
+    # Samples present in THIS batch's raw dir
+    SAMPLES = sample_names()
+    # Missing = present in raw dir but no counts yet
+    SAMPLES_MISSING = [s for s in SAMPLES if not os.path.exists(AGORA_DIR + f"/{s}.counts")]
+
+# Only include merge if ALL samples from the master list have counts
+ALL_SAMPLES_DONE = all(
+    os.path.exists(AGORA_DIR + f"/{s}.counts") for s in ALL_SAMPLES
+)
+
+
+rule all:
+    input:
+        expand(AGORA_DIR + "/{sample}.counts", sample=SAMPLES_MISSING),
+        *([AGORA_DIR + "/agora_mapped_counts.csv"] if ALL_SAMPLES_DONE and not SAMPLES_MISSING else [])
+        #expand(AGORA_DIR + "/{sample}.counts", sample=SAMPLES),
+        #AGORA_DIR + "/agora_mapped_counts.csv"
+
+rule qc_reads:
+    input:
+        r1 = RAW_DIR + "/{sample}_1.fastq.gz",
+        r2 = RAW_DIR + "/{sample}_2.fastq.gz"
+    output:
+        o1 = CLEAN_DIR + "/{sample}_1.fastq.gz",
+        o2 = CLEAN_DIR + "/{sample}_2.fastq.gz"
+    threads: THREADS
+    shell:
+        """
+        mkdir -p {CLEAN_DIR}
+        fastp \
+          -i {input.r1} -I {input.r2} \
+          -o {output.o1} -O {output.o2} \
+          --thread {threads} 
+        """
+
+rule bowtie_filter:
+    input:
+        r1 = CLEAN_DIR + "/{sample}_1.fastq.gz",
+        r2 = CLEAN_DIR + "/{sample}_2.fastq.gz"
+    output:
+        b1 = BOWTIE_DIR + "/{sample}_1.fastq",
+        b2 = BOWTIE_DIR + "/{sample}_2.fastq"
+    threads: THREADS
+    shell:
+        """
+        mkdir -p {BOWTIE_DIR}
+        bowtie2 \
+          -x {BOWTIE_IDX} \
+          -1 {input.r1} -2 {input.r2} \
+          --very-sensitive-local \
+          -p {threads} \
+          --un-conc {BOWTIE_DIR}/{wildcards.sample}_temp \
+          -S /dev/null
+
+        # Fix naming to match flow
+        mv {BOWTIE_DIR}/{wildcards.sample}_temp.1 {output.b1}
+        mv {BOWTIE_DIR}/{wildcards.sample}_temp.2 {output.b2}
+
+        # Clean up temp files
+        rm -f {BOWTIE_DIR}/temp.1 {BOWTIE_DIR}/temp.2
+        # Clean up fastp output (no longer needed)
+        """
+
+rule kraken_classify:
+    """Run Kraken2 to classify and generate .kraken and report files"""
+    input:
+        b1 = BOWTIE_DIR + "/{sample}_1.fastq",
+        b2 = BOWTIE_DIR + "/{sample}_2.fastq"
+    output:
+        kraken = KRAKEN_DIR + "/{sample}.kraken",
+        report = KRAKEN_DIR + "/{sample}.report"
+    threads: THREADS
+    shell:
+        """
+        mkdir -p {KRAKEN_DIR}
+        kraken2 \
+          --db {KRAKEN_DB} \
+          --paired {input.b1} {input.b2} \
+          --output {output.kraken} \
+          --report {output.report} \
+          --use-names \
+          --threads {threads}
+        """
+
+rule kraken_extract:
+    """Extract non-human reads from .kraken, compress to final FASTQ.gz"""
+    input:
+        kraken = KRAKEN_DIR + "/{sample}.kraken",
+        b1     = BOWTIE_DIR + "/{sample}_1.fastq",
+        b2     = BOWTIE_DIR + "/{sample}_2.fastq",
+        report = KRAKEN_DIR + "/{sample}.report"   # <-- REQUIRED for --include-children
+    output:
+        u1     = protected(KRAKEN_DIR + "/{sample}_1.fastq.gz"),
+        u2     = protected(KRAKEN_DIR + "/{sample}_2.fastq.gz")
+    threads: THREADS
+    shell:
+        """
+        # Extract non-eukarya reads (taxid 2759 excluded)
+        python agora_filter_scripts/extract_kraken_reads.py \
+          -k {input.kraken} \
+          -s1 {input.b1} -s2 {input.b2} \
+          -r {input.report} \
+          -o {KRAKEN_DIR}/{wildcards.sample}_temp_1.fastq \
+          -o2 {KRAKEN_DIR}/{wildcards.sample}_temp_2.fastq \
+          --taxid 2759 --exclude --include-children --fastq-output
+
+        # Compress to final outputs
+        pigz -p {threads} -c {KRAKEN_DIR}/{wildcards.sample}_temp_1.fastq > {output.u1}
+        pigz -p {threads} -c {KRAKEN_DIR}/{wildcards.sample}_temp_2.fastq > {output.u2}
+
+        # Clean up temp files
+        rm -f {KRAKEN_DIR}/{wildcards.sample}_temp_1.fastq {KRAKEN_DIR}/{wildcards.sample}_temp_2.fastq
+        """
+
+
+rule minimap_agora_count:
+    input:
+        r1     = KRAKEN_DIR + "/{sample}_1.fastq.gz",
+        r2     = KRAKEN_DIR + "/{sample}_2.fastq.gz",
+        db = AGORA_MINIMAP_DB
+    output:
+        AGORA_DIR + "/{sample}.counts"
+    threads: THREADS
+    shell:
+        r"""
+        mkdir -p {AGORA_DIR}
+        minimap2 -x sr -t {threads} --secondary=no -a {input.db} {input.r1} {input.r2} \
+          | samtools view -f 0x42 -F 0xF0C \
+          | perl -a -ne '($taxid) = $F[2] =~ /\|([^\|]+)$/; $t{{$taxid}}++ if defined $taxid; END {{ foreach $k (keys %t) {{ print "$k\t$t{{$k}}\n" }} }}' \
+          > {output}
+
+        rm -f {CLEAN_DIR}/{wildcards.sample}_1.fastq.gz
+        rm -f {CLEAN_DIR}/{wildcards.sample}_2.fastq.gz
+        rm -f {BOWTIE_DIR}/{wildcards.sample}_1.fastq
+        rm -f {BOWTIE_DIR}/{wildcards.sample}_2.fastq
+        """
+
+
+# revised version to only run the final merge if all count files are present
+rule agora_mapped_counts_table:
+    input:
+        expand(AGORA_DIR + "/{sample}.counts", sample=ALL_SAMPLES)
+    output:
+        AGORA_DIR + "/agora_mapped_counts.csv"
+    shell:
+        r"""
+        python agora_filter_scripts/count_files_to_table.py {input} > {output}
+        """
+
+

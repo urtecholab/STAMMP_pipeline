@@ -1,0 +1,807 @@
+,id,RefSeq,organism_name,genome_size_ungapped
+0,Bacteroides_sp_D1,GCF_000157095.2,Bacteroides sp. D1,5964759
+1,Bacteroides_sp_D2,GCF_000159075.2,Bacteroides sp. D2,6914757
+2,Bacteroides_sp_D22,GCF_000163675.1,Bacteroides sp. D22,6291714
+3,Rothia_aeria_F0474,GCF_000258205.1,Rothia aeria F0474,2584293
+4,Aeromonas_media_WS,GCF_000287215.2,Aeromonas media WS,4788430
+5,Bacteroides_sp_D20,GCF_000162215.1,Bacteroides sp. D20,4452514
+6,Citrobacter_sp_30_2,GCF_000158355.2,Citrobacter portucalensis,5021111
+7,Bacillus_firmus_DS1,GCF_000565285.1,Cytobacillus firmus DS1,4971242
+8,Gordonia_terrae_C_6,GCF_000390025.1,Gordonia terrae C-6,5170241
+9,Actinomyces_oris_K20,GCF_000180155.1,Actinomyces oris K20,2872429
+10,Bacteroides_sp_3_2_5,GCF_000159855.2,Bacteroides sp. 3_2_5,5115082
+11,Clostridium_sp_L2_50,GCF_000154245.1,Clostridium sp. L2-50,2954116
+12,Afipia_birgiae_34632,GCF_000308295.2,Afipia birgiae 34632,5302466
+13,Bacteroides_sp_1_1_6,GCF_000159875.2,Bacteroides thetaiotaomicron,6752535
+14,Ruminococcus_albus_7,GCF_000179635.2,Ruminococcus albus 7 = DSM 20455,4482087
+15,Clostridium_sp_M62_1,GCF_000159055.1,Clostridium sp. M62/1,3836694
+16,Bacteroides_sp_2_2_4,GCF_000157055.1,Bacteroides sp. 2_2_4,7004971
+17,Klebsiella_sp_1_1_55,GCF_000163075.1,Klebsiella variicola,5417477
+18,Bacteroides_sp_2_1_7,GCF_000157035.2,Parabacteroides sp. 2_1_7,5163202
+19,Fusobacterium_sp_4_8,GCF_000400875.1,Fusobacterium animalis 4_8,2275461
+20,Vibrio_fluvialis_560,GCF_000754645.1,Vibrio fluvialis 560,4662925
+21,Veillonella_sp_6_1_27,GCF_000163735.1,Veillonella sp. 6_1_27,2169785
+22,Kocuria_palustris_PEL,GCF_000315815.2,Kocuria palustris PEL,2872112
+23,Escherichia_sp_1_1_43,GCF_000159895.2,Escherichia sp. 1_1_43,4708151
+24,Eggerthella_sp_YY7918,GCF_000270285.1,Eggerthella sp. YY7918,3123671
+25,Bacteroides_sp_3_1_23,GCF_000162555.1,Bacteroides sp. 3_1_23,6489887
+26,Clostridium_sp_SY8519,GCF_000270305.1,Clostridium sp. SY8519,2835737
+27,Shigella_sonnei_Ss046,GCF_000092525.1,Shigella sonnei Ss046,5055316
+28,Escherichia_coli_SE11,GCF_000010385.1,Escherichia coli SE11,5155626
+29,Bacteroides_sp_1_1_30,GCF_000218365.1,Bacteroides sp. 1_1_30,6441725
+30,Vibrio_fluvialis_PG41,GCF_000417625.1,Vibrio fluvialis PG41,5343550
+31,Veillonella_sp_3_1_44,GCF_000163715.1,Veillonella sp. 3_1_44,2156561
+32,Bacteroides_sp_4_1_36,GCF_000185585.1,Bacteroides sp. 4_1_36,4586082
+33,Hafnia_alvei_BIDMC_31,GCF_000521985.1,Klebsiella pneumoniae BIDMC 31,5332034
+34,Coprobacillus_sp_29_1,GCF_000186525.1,Coprobacillus cateniformis,3841269
+35,Vibrio_mimicus_MB_451,GCF_000176375.1,Vibrio mimicus MB451,4313453
+36,Bacteroides_sp_1_1_14,GCF_000162515.1,Bacteroides sp. 1_1_14,6387953
+37,Streptococcus_sp_I_G2,GCF_000479335.1,Streptococcus ilei,1992567
+38,Bacteroides_sp_2_1_22,GCF_000162155.1,Bacteroides sp. 2_1_22,5912968
+39,Bacillus_cereus_G9842,GCF_000021305.1,Bacillus cereus G9842,5736823
+40,Coprococcus_catus_GD_7,GCF_000210555.1,Coprococcus catus GD/7,3463414
+41,Parabacteroides_sp_D13,GCF_000162275.1,Parabacteroides sp. D13,5327234
+42,Ralstonia_sp_5_7_47FAA,GCF_000165085.1,Ralstonia pickettii,5231733
+43,Acidaminococcus_sp_D21,GCF_000174215.1,Acidaminococcus intestini,2238973
+44,Olsenella_uli_DSM_7084,GCF_000143845.1,Olsenella uli DSM 7084,2051896
+45,Streptococcus_sp_I_P16,GCF_000479315.1,Streptococcus ilei,2023580
+46,Aeromonas_veronii_B565,GCF_000204115.1,Aeromonas veronii B565,4551783
+47,Aeromonas_jandaei_Riv2,GCF_000708125.1,Aeromonas jandaei Riv2,4478089
+48,Gemella_sanguinis_M325,GCF_000204335.2,Gemella sanguinis M325,1756105
+49,Aeromonas_caviae_Ae398,GCF_000208825.1,Aeromonas caviae Ae398,4439218
+50,Brevibacillus_agri_5_2,GCF_000612125.1,Brevibacillus agri 5-2,5513716
+51,Escherichia_sp_4_1_40B,GCF_000158415.2,Escherichia sp. 4_1_40B,4905506
+52,Prevotella_bryantii_B14,GCF_900110745.1,Segatella baroniae B14,3558912
+53,Campylobacter_coli_JV20,GCF_000146835.1,Campylobacter coli JV20,1678593
+54,Leuconostoc_gelidum_JB7,GCF_000298875.1,Leuconostoc gelidum JB7,1893499
+55,Bacillus_sonorensis_L12,GCF_000342105.1,Bacillus sonorensis L12,4647754
+56,Eubacterium_hallii_L2_7,GCF_900209925.1,Anaerobutyricum hallii,3515670
+57,Hafnia_alvei_ATCC_51873,GCF_000239255.1,Hafnia alvei ATCC 51873,4880983
+58,Pantoea_agglomerans_IG1,GCF_000241285.1,Pantoea agglomerans IG1,4829577
+59,Vibrio_fluvialis_I21563,GCF_000418995.1,Vibrio fluvialis I21563,4371313
+60,Oribacterium_sinus_F0268,GCF_000160635.1,Oribacterium sinus F0268,2628718
+61,Escherichia_sp_3_2_53FAA,GCF_000157115.2,Escherichia coli,5144253
+62,Clostridium_sp_7_2_43FAA,GCF_000158375.2,Clostridium sp. 7_2_43FAA,3807822
+63,Paenibacillus_lactis_154,GCF_000230915.1,Paenibacillus lactis 154,6805951
+64,Nevskia_ramosa_DSM_11499,GCF_000420645.1,Nevskia ramosa DSM 11499,4515285
+65,Prevotella_intermedia_17,GCF_000261025.1,Prevotella intermedia 17,2699437
+66,Pseudomonas_monteilii_QM,GCF_000262005.1,Pseudomonas monteilii QM,5763138
+67,Roseburia_hominis_A2_183,GCF_000225345.1,Roseburia hominis A2-183,3592125
+68,Lactobacillus_oris_F0423,GCF_000221505.1,Limosilactobacillus oris F0423,2174937
+69,Prevotella_ruminicola_23,GCF_000025925.1,Xylanibacter ruminicola 23,3619559
+70,Burkholderia_cepacia_GG4,GCF_000292915.1,Burkholderia cepacia GG4,6467321
+71,Brevibacterium_casei_S18,GCF_000314575.1,Brevibacterium casei S18,3664641
+72,Blautia_obeum_ATCC_29174,GCF_000153905.1,Blautia obeum ATCC 29174,3624708
+73,Bulleidia_extructa_W1219,GCF_000177375.1,Bulleidia extructa W1219,1419583
+74,Escherichia_albertii_KF1,GCF_000512125.1,Escherichia albertii KF1,4701875
+75,Bacillus_clausii_KSM_K16,GCF_000009825.1,Shouchella clausii KSM-K16,4303871
+76,Prevotella_bryantii_C21a,GCF_000424605.1,Segatella baroniae C21a,3245049
+77,Streptococcus_oralis_Uo5,GCF_000253155.1,Streptococcus oralis Uo5,1958690
+78,Clostridium_botulinum_Bf,GCF_000171075.1,Clostridium botulinum Bf,4217754
+79,Serratia_fonticola_RB_25,GCF_000520015.2,Chania multitudinisentens RB-25,5488183
+80,Gemella_morbillorum_M424,GCF_000185645.1,Gemella morbillorum M424,1745783
+81,Listeria_grayi_DSM_20601,GCF_000148995.1,Listeria grayi DSM 20601,2589961
+82,Geobacillus_vulcani_PSS1,GCF_000733845.1,Geobacillus vulcani PSS1,3389115
+83,Eggerthella_sp_1_3_56FAA,GCF_000185625.1,Eggerthella sp. 1_3_56FAA,3388691
+84,Cedecea_davisae_DSM_4568,GCF_000412335.2,Cedecea davisae DSM 4568,4852684
+85,Bacteroides_faecis_MAJ27,GCF_000226135.1,Bacteroides faecis MAJ27,6114510
+86,Moraxella_catarrhalis_RH4,GCF_000302495.1,Moraxella catarrhalis RH4,1836691
+87,Spirosoma_linguale_DSM_74,GCF_000024525.1,Spirosoma linguale DSM 74,8491258
+88,Blautia_producta_DSM_2950,GCF_000373885.1,Blautia producta ATCC 27340 = DSM 2950,6085111
+89,Staphylococcus_xylosus_NJ,GCF_000338275.1,Staphylococcus xylosus NJ,2939263
+90,Actinomyces_viscosus_C505,GCF_000175315.3,Actinomyces viscosus C505,3126396
+91,Desulfovibrio_sp_3_1_syn3,GCF_000145315.2,Desulfovibrio sp. 3_1_syn3,3663932
+92,Brevibacterium_linens_BL2,GCF_000167575.1,Brevibacterium aurantiacum,4366842
+93,Scardovia_inopinata_F0304,GCF_000163755.1,Scardovia inopinata F0304,1801055
+94,Anaerostipes_sp_3_2_56FAA,GCF_000185825.1,Anaerostipes caccae,3254804
+95,Mycoplasma_pneumoniae_309,GCF_000283755.1,Mycoplasmoides pneumoniae 309,817176
+96,Rothia_mucilaginosa_DY_18,GCF_000011025.1,Rothia mucilaginosa DY-18,2264603
+97,Kocuria_rhizophila_DC2201,GCF_000010285.1,Kocuria rhizophila DC2201,2697540
+98,Bacillus_subtilis_str_168,GCF_000009045.1,Bacillus subtilis subsp. subtilis str. 168,4215606
+99,Lactobacillus_mucosae_LM1,GCF_000248095.2,Limosilactobacillus mucosae LM1,2434610
+100,Rudanella_lutea_DSM_19387,GCF_000383955.1,Rudanella lutea DSM 19387,6544636
+101,Delftia_acidovorans_SPH_1,GCF_000018665.1,Delftia acidovorans SPH-1,6767514
+102,Bacteroides_fragilis_638R,GCF_000210835.1,Bacteroides fragilis 638R,5373121
+103,Bacillus_halodurans_C_125,GCF_000011145.1,Halalkalibacterium halodurans C-125,4202352
+104,Kurthia_massiliensis_JC30,GCF_000285555.1,Kurthia massiliensis,3201696
+105,Acinetobacter_junii_SH205,GCF_000162075.1,Acinetobacter junii SH205,3338932
+106,Alistipes_shahii_WAL_8301,GCF_000210575.1,Alistipes shahii WAL 8301,3649672
+107,Helicobacter_pylori_26695,GCF_000307795.1,Helicobacter pylori 26695,1667892
+108,Staphylococcus_caprae_C87,GCF_000183705.1,Staphylococcus capitis C87,2460970
+109,Neisseria_subflava_NJ9703,GCF_000173955.1,Neisseria subflava NJ9703,2292986
+110,Bacillus_fordii_DSM_16014,GCF_000374565.1,Siminovitchia fordii DSM 16014 = CIP 108821,4506100
+111,Campylobacter_lari_RM2100,GCF_000019205.1,Campylobacter lari RM2100,1571661
+112,Shigella_flexneri_2002017,GCF_000022245.1,Shigella flexneri 2002017,4894492
+113,Clostridium_innocuum_2959,GCF_000371425.1,[Clostridium] innocuum 2959,4772018
+114,Bacillus_flexus_27Col1_1E,GCF_000527015.1,Priestia megaterium,5460379
+115,Bacillus_pseudofirmus_OF4,GCF_000005825.2,Alkalihalophilus pseudofirmus OF4,4249248
+116,Olsenella_profusa_F019501,GCF_000468755.1,Olsenella profusa F0195,2724935
+117,Prevotella_bivia_DSM_20514,GCF_000262545.1,Prevotella bivia DSM 20514,2520138
+118,Trueperella_pyogenes_MS249,GCF_000599565.1,Trueperella pyogenes MS249,2216617
+119,Bacillus_pumilus_ATCC_7061,GCF_000172815.1,Bacillus pumilus ATCC 7061,3833998
+120,Bacillus_endophyticus_2102,GCF_000283255.1,Priestia filamentosa,5107189
+121,Kingella_oralis_ATCC_51147,GCF_000160435.1,Kingella oralis ATCC 51147,2405975
+122,Bacteroides_timonensis_AP1,GCF_000513195.1,Bacteroides timonensis,7017222
+123,Arcobacter_butzleri_RM4018,GCF_000014025.1,Aliarcobacter butzleri RM4018,2341251
+124,Sulfolobus_solfataricus_P2,GCF_000007005.1,Saccharolobus solfataricus P2,2992245
+125,Prevotella_denticola_F0289,GCF_000193395.1,Prevotella denticola F0289,2937589
+126,Porphyromonas_uenonis_60_3,GCF_000174775.1,Porphyromonas uenonis 60-3,2242885
+127,Atopobium_minutum_10063974,GCF_000364325.1,Atopobium minutum 10063974,1706361
+128,Solobacterium_moorei_F0204,GCF_000186945.2,Solobacterium moorei F0204,2007527
+129,Atopobium_rimae_ATCC_49626,GCF_000174015.1,Lancefieldella rimae ATCC 49626,1626291
+130,Bifidobacterium_longum_E18,GCF_000497735.1,Bifidobacterium longum E18,2369591
+131,Paenibacillus_alvei_DSM_29,GCF_000293805.1,Paenibacillus alvei DSM 29,6834602
+132,Bacteroides_fragilis_YCH46,GCF_000009925.1,Bacteroides fragilis YCH46,5310990
+133,Staphylococcus_capitis_QN1,GCF_000263775.1,Staphylococcus capitis QN1,2430101
+134,Bacillus_mycoides_DSM_2048,GCF_000003925.1,Bacillus mycoides DSM 2048,5541906
+135,Enterobacter_asburiae_LF7a,GCF_000224675.1,Enterobacter soli,5012132
+136,Blautia_wexlerae_DSM_19850,GCF_000484655.1,Blautia wexlerae DSM 19850,4508448
+137,Eggerthella_lenta_DSM_2243,GCF_000024265.1,Eggerthella lenta DSM 2243,3632260
+138,Bacillus_megaterium_DSM319,GCF_000025805.1,Priestia megaterium DSM 319,5097447
+139,Streptococcus_uberis_0140J,GCF_000009545.1,Streptococcus uberis 0140J,1852352
+140,Enterococcus_faecalis_V583,GCF_000007785.1,Enterococcus faecalis V583,3359974
+141,Eubacterium_rectale_M104_1,GCF_000209955.1,Agathobacter rectalis M104/1,3566572
+142,Slackia_exigua_ATCC_700122,GCF_000162875.1,Slackia exigua ATCC 700122,2094589
+143,Yersinia_rohdei_ATCC_43380,GCF_000173775.1,Yersinia rohdei ATCC 43380,4317478
+144,Kallipyga_massiliensis_ph2,GCF_000311985.1,Kallipyga massiliensis ph2,1751953
+145,Streptococcus_sp_2_1_36FAA,GCF_000161955.2,Streptococcus sp. 2_1_36FAA,2230611
+146,Shigella_dysenteriae_Sd197,GCF_000012005.1,Shigella dysenteriae Sd197,4560911
+147,Bacteroides_ovatus_SD_CC_2a,GCF_000178295.1,Bacteroides xylanisolvens SD CC 2a,6050198
+148,Enterococcus_faecium_TX1330,GCF_003583905.1,Enterococcus faecium TX1330,2780471
+149,Dorea_longicatena_DSM_13814,GCF_000154065.1,Dorea longicatena DSM 13814,2913833
+150,Enterococcus_gallinarum_EG2,GCF_000157255.1,Enterococcus gallinarum EG2,3134429
+151,Bacteroides_fragilis_3_1_12,GCF_000157015.1,Bacteroides fragilis 3_1_12,5486240
+152,Enterobacter_cloacae_EcWSU1,GCF_000239975.1,Enterobacter ludwigii,4798091
+153,Clostridium_indolis_DSM_755,GCF_000526995.1,Lacrimispora indolis DSM 755,6383701
+154,Clostridium_difficile_CD196,GCF_000085225.1,Clostridioides difficile CD196,4110554
+155,Dialister_invisus_DSM_15470,GCF_000160055.1,Dialister invisus DSM 15470,1895860
+156,Prevotella_disiens_JCM_6334,GCF_000613345.1,Prevotella disiens JCM 6334 = ATCC 29426,2797134
+157,Silanimonas_lenta_DSM_16282,GCF_000429065.1,Silanimonas lenta DSM 16282,2644563
+158,Corynebacterium_durum_F0235,GCF_000318135.1,Corynebacterium durum F0235,2809096
+159,Finegoldia_magna_ATCC_29328,GCF_000010185.1,Finegoldia magna ATCC 29328,1986740
+160,Prevotella_enoeca_JCM_12259,GCF_000613405.1,Hoylesella enoeca JCM 12259,2784020
+161,Escherichia_coli_UTI89_UPEC,GCF_000013265.1,Escherichia coli UTI89,5179971
+162,Prevotella_shahii_JCM_12083,GCF_003201715.1,Hoylesella shahii DSM 15611 = JCM 12083,3510046
+163,Eubacterium_limosum_KIST612,GCF_000152245.2,Eubacterium callanderi,4316707
+164,Parvimonas_micra_ATCC_33270,GCF_000154405.1,Parvimonas micra ATCC 33270,1703772
+165,Campylobacter_curvus_525_92,GCF_000017465.2,Campylobacter curvus 525.92,1971270
+166,Clostridium_difficile_NAP08,GCF_000164175.1,Clostridioides difficile NAP08,4021616
+167,Bacteroides_dorei_DSM_17855,GCF_000156075.1,Phocaeicola dorei DSM 17855,5487751
+168,Neisseria_mucosa_ATCC_25996,GCF_000173875.1,Neisseria mucosa ATCC 25996,2578748
+169,Staphylococcus_cohnii_hu_01,GCF_000513495.2,Staphylococcus cohnii hu-01,2735503
+170,Enterobacter_hormaechei_YT3,GCF_000328885.1,Enterobacter hormaechei YT3,4809338
+171,Lactobacillus_gastricus_PS3,GCF_000247775.1,Limosilactobacillus gastricus PS3,1904872
+172,Citrobacter_freundii_UCI_31,GCF_000521965.1,Citrobacter freundii UCI 31,5258293
+173,Clostridium_difficile_NAP07,GCF_000164655.1,Clostridioides difficile NAP07,3862058
+174,Vibrio_furnissii_NCTC_11218,GCF_000184325.1,Vibrio furnissii NCTC 11218,4916408
+175,Eubacterium_hallii_DSM_3353,GCF_000173975.1,Anaerobutyricum hallii DSM 3353,3290996
+176,Bilophila_wadsworthia_3_1_6,GCF_000185705.2,Bilophila wadsworthia 3_1_6,4391094
+177,Gordonia_terrae_NBRC_100016,GCF_000248035.1,Gordonia terrae NBRC 100016,5669149
+178,Bifidobacterium_bifidum_S17,GCF_000164965.1,Bifidobacterium bifidum S17,2186882
+179,Halococcus_morrhuae_DSM1307,GCF_000336695.1,Halococcus morrhuae DSM 1307,2991556
+180,Bacillus_altitudinis_41KF2b,GCF_000691145.1,Bacillus altitudinis 41KF2b,3678935
+181,Rhodococcus_equi_ATCC_33707,GCF_000164155.2,Prescottella equi ATCC 33707,5255557
+182,Enterobacter_hormaechei_YT2,GCF_000328905.1,Enterobacter hormaechei YT2,4802847
+183,Staphylococcus_pasteuri_SP1,GCF_000494875.1,Staphylococcus pasteuri SP1,2559946
+184,Campylobacter_rectus_RM3267,GCF_000174175.1,Campylobacter rectus RM3267,2513107
+185,Bacteroides_fluxus_YIT_12057,GCF_000195635.1,Bacteroides fluxus YIT 12057,4330083
+186,Clostridium_difficile_R20291,GCF_000027105.1,Clostridioides difficile R20291,4191139
+187,Slackia_piriformis_YIT_12062,GCF_000296445.1,Slackia piriformis YIT 12062,2100457
+188,Bacillus_timonensis_10403023,GCF_000285535.1,Bacillus timonensis,4608729
+189,Rhodococcus_erythropolis_PR4,GCF_000010105.1,Rhodococcus erythropolis PR4,6895538
+190,Odoribacter_laneus_YIT_12061,GCF_000243215.1,Odoribacter laneus YIT 12061,3753461
+191,Atopobium_parvulum_DSM_20469,GCF_000024225.1,Lancefieldella parvula DSM 20469,1543805
+192,Prevotella_salivae_DSM_15606,GCF_000185845.1,Segatella salivae DSM 15606,3139809
+193,Bacteroides_clarus_YIT_12056,GCF_900129655.1,Bacteroides clarus YIT 12056,3748808
+194,Enterococcus_faecalis_TX2134,GCF_000148065.1,Enterococcus faecalis TX2134,3120725
+195,Lactobacillus_casei_ATCC_334,GCF_000014525.1,Lacticaseibacillus paracasei ATCC 334,2924325
+196,Bacteroides_ovatus_ATCC_8483,GCF_001314995.1,Bacteroides ovatus,6472489
+197,Escherichia_albertii_TW07627,GCF_000155105.1,Escherichia albertii TW07627,4698533
+198,Bartonella_quintana_Toulouse,GCF_000046685.1,Bartonella quintana str. Toulouse,1581384
+199,Lactobacillus_plantarum_JDM1,GCF_000023085.1,Lactiplantibacillus plantarum JDM1,3197759
+200,Enterococcus_hirae_ATCC_9790,GCF_000271405.2,Enterococcus hirae ATCC 9790,2856440
+201,Paracoccus_yeei_ATCC_BAA_599,GCF_000622145.1,Paracoccus yeei ATCC BAA-599,4427155
+202,Haemophilus_influenzae_R2846,GCF_000165575.1,Haemophilus influenzae R2846,1819370
+203,Actinomyces_graevenitzii_C83,GCF_000239695.1,Actinomyces graevenitzii C83,2196917
+204,Roseburia_intestinalis_L1_82,GCF_900537995.1,Roseburia intestinalis L1-82,4493348
+205,Rhodococcus_equi_NBRC_101255,GCF_001552575.1,Prescottella equi NBRC 101255 = C 7,5196588
+206,Enterococcus_faecalis_TX1322,GCF_000159275.1,Enterococcus faecalis TX1322,2929290
+207,Micrococcus_luteus_NCTC_2665,GCF_900475555.1,Micrococcus luteus NCTC 2665,2495693
+208,Prevotella_buccae_ATCC_33574,GCF_000184945.1,Segatella buccae ATCC 33574,3222824
+209,Anaerostipes_hadrus_DSM_3319,GCF_000332875.2,Anaerostipes hadrus ATCC 29173 = JCM 17467,2771521
+210,Comamonas_testosteroni_CNB_2,GCF_000093145.3,Comamonas thiooxydans,5373644
+211,Proteus_mirabilis_ATCC_29906,GCF_000160755.1,Proteus mirabilis ATCC 29906,3975048
+212,Neisseria_cinerea_ATCC_14685,GCF_000173895.1,Neisseria cinerea ATCC 14685,1872773
+213,Filifactor_alocis_ATCC_35896,GCF_000163895.2,Filifactor alocis ATCC 35896,1931012
+214,Bacteroides_ovatus_SD_CMC_3f,GCF_000178275.1,Bacteroides ovatus SD CMC 3f,6775279
+215,Klebsiella_oxytoca_KCTC_1686,GCF_000240325.1,Klebsiella michiganensis KCTC 1686,5974109
+216,Clostridium_celatum_DSM_1785,GCF_000320405.1,Clostridium celatum DSM 1785,3553421
+217,Bifidobacterium_bifidum_BGN4,GCF_000265095.1,Bifidobacterium bifidum BGN4,2223664
+218,Gemella_sanguinis_ATCC700632,GCF_000701685.1,Gemella sanguinis ATCC 700632,1793664
+219,Porphyromonas_gingivalis_W83,GCF_000007585.1,Porphyromonas gingivalis W83,2343476
+220,Neisseria_macacae_ATCC_33926,GCF_000220865.1,Neisseria macacae ATCC 33926,2684269
+221,Campylobacter_concisus_13826,GCF_000017725.2,Campylobacter concisus 13826,2099413
+222,Corynebacterium_ulcerans_809,GCF_000215645.1,Corynebacterium ulcerans 809,2502095
+223,Prevotella_oralis_ATCC_33269,GCF_000185145.2,Hoylesella oralis ATCC 33269,2833787
+224,Prevotella_brevis_ATCC_19188,GCF_000621725.1,Xylanibacter brevis ATCC 19188,3490285
+225,Citrobacter_amalonaticus_Y19,GCF_000981805.1,Citrobacter amalonaticus Y19,5875351
+226,Streptococcus_sanguinis_SK36,GCF_000014205.1,Streptococcus sanguinis SK36,2388435
+227,Pediococcus_acidilactici_7_4,GCF_000163095.1,Pediococcus acidilactici 7_4,2010555
+228,Brachyspira_pilosicoli_B2904,GCF_000296575.1,Brachyspira pilosicoli B2904,2765477
+229,Weissella_cibaria_KACC_11862,GCF_000193635.1,Weissella cibaria KACC 11862,2317857
+230,Weissella_confusa_LBAE_C39_2,GCF_000239955.1,Weissella confusa LBAE C39-2,2284024
+231,Tatumella_ptyseos_ATCC_33301,GCF_000735525.1,Tatumella ptyseos ATCC 33301,3532407
+232,Enterococcus_faecalis_TX0104,GCF_000159255.1,Enterococcus faecalis TX0104,3106826
+233,Eubacterium_biforme_DSM_3989,GCF_000156655.1,Holdemanella biformis DSM 3989,2415920
+234,Kandleria_vitulina_DSM_20405,GCF_001436965.1,Kandleria vitulina DSM 20405,2128186
+235,Tropheryma_whipplei_str_Twist,GCF_000007485.1,Tropheryma whipplei str. Twist,927303
+236,Listeria_monocytogenes_4a_L99,GCF_000209755.1,Listeria monocytogenes L99,2979198
+237,Fusobacterium_necrophorum_D12,GCF_000158295.2,Fusobacterium necrophorum D12,1950825
+238,Stoquefichus_massiliensis_AP9,GCF_000455285.1,Candidatus Stoquefichus massiliensis AP9,3433040
+239,Bacteroides_caccae_ATCC_43185,GCF_002959715.1,Bacteroides caccae,4577788
+240,Lactobacillus_plantarum_WCFS1,GCF_000203855.3,Lactiplantibacillus plantarum WCFS1,3348624
+241,Eubacterium_dolichum_DSM_3991,GCF_000154285.1,Amedibacillus dolichus DSM 3991,2190453
+242,Bacteroides_pyogenes_DSM20611,GCF_000187895.1,Phocaeicola plebeius DSM 17135,4421324
+243,Acinetobacter_pittii_ANC_4052,GCF_000399705.1,Acinetobacter lactucae,3953097
+244,Achromobacter_xylosoxidans_A8,GCF_000165835.1,Achromobacter xylosoxidans A8,7359146
+245,Helicobacter_bilis_ATCC_43879,GCF_000158435.2,Helicobacter bilis ATCC 43879,2523721
+246,Pseudomonas_fluorescens_PfO_1,GCF_000012445.1,Pseudomonas fluorescens Pf0-1,6438405
+247,Pseudomonas_stutzeri_DSM_4166,GCF_000195105.1,Stutzerimonas stutzeri DSM 4166,4689946
+248,Clostridium_cadaveris_AGR2141,GCF_000424205.1,Clostridium cadaveris AGR2141,3538661
+249,Campylobacter_gracilis_RM3268,GCF_000175875.1,Campylobacter gracilis RM3268,2255573
+250,Prevotella_corporis_DSM_18810,GCF_000430525.1,Prevotella corporis DSM 18810 = JCM 8529,2790845
+251,Veillonella_dispar_ATCC_17748,GCF_000160015.1,Veillonella dispar ATCC 17748,2116567
+252,Prevotella_disiens_FB035_09AN,GCF_000179675.1,Prevotella disiens FB035-09AN,3003828
+253,Bifidobacterium_longum_DJO10A,GCF_000008945.1,Bifidobacterium longum DJO10A,2389526
+254,Campylobacter_showae_CSUNSWCD,GCF_000313615.1,Campylobacter showae CSUNSWCD,2125173
+255,Ruminococcus_bicirculans_80_3,GCF_000723465.1,Ruminococcus bicirculans (ex Wegman et al. 2014),2968500
+256,Eggerthia_catenaformis_OT_569,GCF_000422605.1,Eggerthia catenaformis OT 569 = DSM 20559,1917551
+257,Mesorhizobium_loti_MAFF303099,GCF_000009625.1,Mesorhizobium japonicum MAFF 303099,7596297
+258,Mycoplasma_hominis_ATCC_23114,GCF_000085865.1,Metamycoplasma hominis ATCC 23114,665445
+259,Prevotella_denticola_DSM20614,GCF_000421205.1,Prevotella denticola DSM 20614 = JCM 13449,3056796
+260,Kluyvera_ascorbata_ATCC_33433,GCF_000735365.1,Kluyvera ascorbata ATCC 33433,4932354
+261,Grimontia_hollisae_CIP_101886,GCF_000176515.1,Grimontia hollisae CIP 101886,4002786
+262,Acinetobacter_johnsonii_SH046,GCF_000162055.1,Acinetobacter johnsonii SH046,3561713
+263,Bifidobacterium_breve_HPH0326,GCF_000411435.1,Bifidobacterium breve HPH0326,2502557
+264,Anaerostipes_caccae_DSM_14662,GCF_900624715.1,Anaerostipes caccae L1-92,3502298
+265,Oxalobacter_formigenes_OXCC13,GCF_002128345.1,Oxalobacter formigenes OXCC13,2433653
+266,Clostridium_sartagoforme_AAU1,GCF_000401215.1,Clostridium sartagoforme AAU1,3983371
+267,Providencia_rettgeri_DSM_1131,GCF_000158055.1,Providencia rettgeri DSM 1131,4749568
+268,Prevotella_albensis_DSM_11370,GCF_000426565.1,Segatella albensis DSM 11370 = JCM 12258,2666465
+269,Lactobacillus_antri_DSM_16041,GCF_001435475.1,Limosilactobacillus antri DSM 16041,2241837
+270,Enterococcus_durans_ATCC_6056,GCF_000406985.1,Enterococcus durans ATCC 6056,3090895
+271,Edwardsiella_tarda_ATCC_23685,GCF_000163955.1,Edwardsiella tarda ATCC 23685,3631524
+272,Enterococcus_avium_ATCC_14025,GCF_000406965.1,Enterococcus avium ATCC 14025,4620500
+273,Actinomyces_georgiae_DSM_6843,GCF_000429245.1,Schaalia georgiae DSM 6843,2492993
+274,Bacteroides_nordii_CL02T12C05,GCF_000273175.1,Bacteroides nordii CL02T12C05,5707589
+275,Blastococcus_massiliensis_AP3,GCF_000582785.1,Candidatus Blastococcus massiliensis AP3,3864252
+276,Lactobacillus_brevis_ATCC_367,GCF_000014465.1,Levilactobacillus brevis ATCC 367,2340228
+277,Methylobacterium_populi_BJ001,GCF_000019945.1,Methylorubrum populi BJ001,5848997
+278,Streptococcus_lutetiensis_033,GCF_000441535.1,Streptococcus lutetiensis 033,1975547
+279,Streptococcus_agalactiae_A909,GCF_000012705.1,Streptococcus agalactiae A909,2127839
+280,Leuconostoc_lactis_KACC_91922,GCF_000709265.1,Leuconostoc lactis,1688172
+281,Oxalobacter_formigenes_HOxBLS,GCF_000158475.2,Oxalobacter paraformigenes,2485686
+282,Lactobacillus_iners_DSM_13335,GCF_001435015.1,Lactobacillus iners DSM 13335,1267657
+283,Bifidobacterium_longum_NCC2705,GCF_000007525.1,Bifidobacterium longum NCC2705,2260266
+284,Brevibacillus_borstelensis_AK1,GCF_000353565.1,Brevibacillus borstelensis AK1,5155092
+285,Lautropia_mirabilis_ATCC_51599,GCF_000186425.1,Lautropia mirabilis ATCC 51599,3137198
+286,Alistipes_finegoldii_DSM_17242,GCF_000265365.1,Alistipes finegoldii DSM 17242,3734239
+287,Lactobacillus_casei_casei_BL23,GCF_000026485.1,Lacticaseibacillus paracasei,3079196
+288,Eikenella_corrodens_ATCC_23834,GCF_000158615.1,Eikenella corrodens ATCC 23834,2135355
+289,Mobiluncus_curtisii_ATCC_43063,GCF_000196535.1,Mobiluncus curtisii ATCC 43063,2146480
+290,Megasphaera_elsdenii_DSM_20460,GCF_003010495.1,Megasphaera elsdenii DSM 20460,2478942
+291,Paenibacillus_barengoltzii_G22,GCF_000403375.2,Paenibacillus barengoltzii G22,4749952
+292,Solobacterium_moorei_DSM_22971,GCF_000425005.1,Solobacterium moorei DSM 22971,2335456
+293,Paraprevotella_clara_YIT_11840,GCF_000233955.1,Paraprevotella clara YIT 11840,4231335
+294,Leptotrichia_buccalis_C_1013_b,GCF_000023905.1,Leptotrichia buccalis C-1013-b,2465610
+295,Lactobacillus_acidophilus_NCFM,GCF_000011985.1,Lactobacillus acidophilus NCFM,1993560
+296,Bacteroides_vulgatus_ATCC_8482,GCF_000012825.1,Phocaeicola vulgatus ATCC 8482,5163189
+297,Campylobacter_jejuni_jejuni_M1,GCF_000148705.1,Campylobacter jejuni subsp. jejuni M1,1616648
+298,Citrobacter_freundii_ATCC_8090,GCF_000734905.1,Citrobacter freundii ATCC 8090 = MTCC 1658 = NBRC 12681,4899643
+299,Enterococcus_asini_ATCC_700915,GCF_000407365.1,Enterococcus asini ATCC 700915,2572706
+300,Ruminococcus_gnavus_ATCC_29149,GCF_000169475.1,Mediterraneibacter gnavus ATCC 29149,3501911
+301,Pyramidobacter_piscolens_W5455,GCF_000177335.1,Pyramidobacter piscolens W5455,2562014
+302,Enterococcus_cecorum_DSM_20682,GCF_001885885.1,Enterococcus cecorum DSM 20682 = ATCC 43198,2316525
+303,Laribacter_hongkongensis_HLHK9,GCF_000021025.1,Laribacter hongkongensis HLHK9,3169329
+304,Lactobacillus_rhamnosus_LMS2_1,GCF_000160175.1,Lacticaseibacillus rhamnosus LMS2-1,3108760
+305,Butyricimonas_virosa_DSM_23226,GCF_000519105.1,Butyricimonas virosa DSM 23226,4715836
+306,Eubacterium_eligens_ATCC_27750,GCF_000146185.1,Lachnospira eligens ATCC 27750,2831389
+307,Yersinia_bercovieri_ATCC_43970,GCF_000167975.1,Yersinia bercovieri ATCC 43970,4347293
+308,Prevotella_stercorea_DSM_18206,GCF_000235885.1,Leyella stercorea DSM 18206,3092669
+309,Citrobacter_youngae_ATCC_29220,GCF_000155975.1,Citrobacter youngae ATCC 29220,5150259
+310,Prevotella_veroralis_DSM_19559,GCF_000377625.1,Prevotella veroralis DSM 19559 = JCM 6290,2842435
+311,Gemella_haemolysans_ATCC_10379,GCF_000173915.1,Gemella haemolysans ATCC 10379,1916192
+312,Rothia_dentocariosa_ATCC_17931,GCF_000164695.2,Rothia dentocariosa ATCC 17931,2506025
+313,Aerococcus_viridans_ATCC_11563,GCF_000178435.1,Aerococcus viridans ATCC 11563 = CCUG 4311,2005853
+314,Propionibacterium_avidum_44067,GCF_000367205.1,Cutibacterium avidum 44067,2526138
+315,Staphylococcus_vitulinus_F1028,GCF_000286335.1,Mammaliicoccus vitulinus F1028,2559484
+316,Bacteroides_xylanisolvens_XB1A,GCF_000210075.1,Bacteroides xylanisolvens XB1A,5800817
+317,Clostridium_hathewayi_12489931,GCF_000371445.1,Hungatella hathewayi 12489931,6848759
+318,Streptococcus_mitis_NCTC_12261,GCF_000148585.2,Streptococcus mitis NCTC 12261,1868883
+319,Bradyrhizobium_elkanii_USDA_76,GCF_000379145.1,Bradyrhizobium elkanii USDA 76,9482467
+320,Lactobacillus_curvatus_CRL_705,GCF_000235705.1,Latilactobacillus curvatus CRL 705,1838358
+321,Eubacterium_ramulus_ATCC_29099,GCF_000469345.1,Eubacterium ramulus ATCC 29099,3436736
+322,Acinetobacter_baumannii_AB0057,GCF_000021245.2,Acinetobacter baumannii AB0057,4063879
+323,Campylobacter_upsaliensis_JV21,GCF_000185345.1,Campylobacter upsaliensis JV21,1621689
+324,Eubacterium_rectale_ATCC_33656,GCF_000020605.1,Agathobacter rectalis ATCC 33656,3449685
+325,Selenomonas_ruminantium_AC2024,GCF_000687995.1,Selenomonas ruminantium AC2024,2831713
+326,Peptoniphilus_timonensis_JC401,GCF_000312025.1,Peptoniphilus timonensis JC401,1726703
+327,Staphylococcus_arlettae_CVD059,GCF_000295715.1,Staphylococcus arlettae CVD059,2565675
+328,Prevotella_copri_CB7_DSM_18205,GCF_902167755.1,Segatella copri DSM 18205,4130666
+329,Roseomonas_mucosa_ATCC_BAA_692,GCF_000622225.1,Roseomonas mucosa ATCC BAA-692,4858350
+330,Desulfovibrio_piger_ATCC_29098,GCF_000156375.1,Desulfovibrio piger ATCC 29098,2826240
+331,Collinsella_tanakaei_YIT_12063,GCF_000225705.1,Collinsella tanakaei YIT 12063,2482197
+332,Actinomyces_cardiffensis_F0333,GCF_000364865.1,Schaalia cardiffensis F0333,2188018
+333,Megamonas_funiformis_YIT_11815,GCF_000245775.1,Megamonas funiformis YIT 11815,2533141
+334,Bacteroides_fragilis_NCTC_9343,GCF_000025985.1,Bacteroides fragilis NCTC 9343,5241700
+335,Bacillus_infantis_NRRL_B_14911,GCF_000473245.1,Bacillus infantis NRRL B-14911,4884713
+336,Pseudomonas_nitroreducens_HBP1,GCF_000518065.1,Pseudomonas nitroreducens HBP1,7408198
+337,Bifidobacterium_boum_DSM_20432,GCF_000771385.1,Bifidobacterium boum DSM 20432,2171437
+338,Prevotella_pallens_ATCC_700821,GCF_000220255.1,Prevotella pallens ATCC 700821,3047417
+339,Enterococcus_dispar_ATCC_51266,GCF_000407585.1,Enterococcus dispar ATCC 51266,2812918
+340,Alistipes_putredinis_DSM_17216,GCF_000154465.1,Alistipes putredinis DSM 17216,2549878
+341,Providencia_stuartii_ATCC_25827,GCF_000154865.1,Providencia stuartii ATCC 25827,4603561
+342,Dysgonomonas_gadei_ATCC_BAA_286,GCF_000213555.1,Dysgonomonas gadei ATCC BAA-286,5165995
+343,Mitsuokella_multacida_DSM_20544,GCF_000155955.1,Mitsuokella multacida DSM 20544,2574556
+344,Haemophilus_haemolyticus_M19501,GCF_000222025.1,Haemophilus haemolyticus M19501,1884911
+345,Bacillus_amyloliquefaciens_DSM7,GCF_000196735.1,Bacillus amyloliquefaciens DSM 7 = ATCC 23350,3980199
+346,Clostridium_citroniae_WAL_17108,GCF_000233455.1,[Clostridium] citroniae WAL-17108,6624800
+347,Listeria_monocytogenes_4b_F2365,GCF_000008285.1,Listeria monocytogenes serotype 4b str. F2365,2905187
+348,Citrobacter_koseri_ATCC_BAA_895,GCF_000018045.1,Citrobacter koseri ATCC BAA-895,4735357
+349,Streptococcus_intermedius_JTH08,GCF_000306805.1,Streptococcus intermedius JTH08,1933610
+350,Clostridium_butyricum_DSM_10702,GCF_000409755.1,Clostridium butyricum DSM 10702,4596811
+351,Anaerococcus_prevotii_DSM_20548,GCF_000024105.1,Anaerococcus prevotii DSM 20548,1998633
+352,Clostridium_symbiosum_WAL_14163,GCF_000189595.1,[Clostridium] symbiosum WAL-14163,5312064
+353,Streptococcus_equinus_ATCC_9812,GCF_000187265.1,Streptococcus equinus ATCC 9812,1718633
+354,Clostridium_symbiosum_WAL_14673,GCF_000189615.1,[Clostridium] symbiosum WAL-14673,4857801
+355,Lactobacillus_johnsonii_NCC_533,GCF_000008065.1,Lactobacillus johnsonii NCC 533,1992676
+356,Streptococcus_pyogenes_MGAS9429,GCF_000013485.1,Streptococcus pyogenes MGAS9429,1836467
+357,Butyrivibrio_crossotus_DSM_2876,GCF_000156015.1,Eshraghiella crossota DSM 2876,2482791
+358,Clostridium_sticklandii_DSM_519,GCF_000196455.1,Acetoanaerobium sticklandii,2715461
+359,Alistipes_onderdonkii_DSM_19147,GCF_000374505.1,Alistipes onderdonkii WAL 8169 = DSM 19147,3864643
+360,Lactococcus_garvieae_ATCC_49156,GCF_000269925.1,Lactococcus garvieae ATCC 49156,1950135
+361,Bacteroides_eggerthii_1_2_48FAA,GCF_000273465.1,Bacteroides eggerthii 1_2_48FAA,4611535
+362,Fusobacterium_russii_ATCC_25533,GCF_000381725.1,Fusobacterium russii ATCC 25533,1935478
+363,Bradyrhizobium_japonicum_USDA_6,GCF_000284375.1,Bradyrhizobium japonicum USDA 6,9207384
+364,Arthrobacter_castelli_DSM_16402,GCF_000430705.1,Arthrobacter castelli DSM 16402,4582596
+365,Ruminococcus_torques_ATCC_27756,GCF_000153925.1,[Ruminococcus] torques ATCC 27756,2739406
+366,Bordetella_hinzii_OH87_BAL007II,GCF_000657735.1,Bordetella hinzii OH87 BAL007II,4885897
+367,Clostridium_hathewayi_DSM_13479,GCF_000160095.1,Hungatella hathewayi DSM 13479,6626224
+368,Bacteroides_uniformis_ATCC_8492,GCF_900624705.1,Bacteroides uniformis ATCC 8492,4945113
+369,Porphyromonas_somerae_DSM_23386,GCF_000372405.1,Porphyromonas somerae DSM 23386,2356678
+370,Helicobacter_cinaedi_CCUG_18818,GCF_000349975.1,Helicobacter cinaedi CCUG 18818 = ATCC BAA-847,2240130
+371,Fusobacterium_varium_ATCC_27725,GCF_003019655.1,Fusobacterium varium ATCC 27725,3346458
+372,Plesiomonas_shigelloides_302_73,GCF_000392595.1,Plesiomonas shigelloides 302-73,3908112
+373,Porphyromonas_uenonis_DSM_23387,GCF_000482365.1,Porphyromonas uenonis DSM 23387 = JCM 13868,2239569
+374,Staphylococcus_xylosus_DMB3_Bh1,GCF_000467225.1,Staphylococcus xylosus DMB3-Bh1,2809321
+375,Haemophilus_parainfluenzae_T3T1,GCF_000210895.1,Haemophilus parainfluenzae T3T1,2086875
+376,Sutterella_parvirubra_YIT_11816,GCF_000250875.1,Sutterella parvirubra YIT 11816,2368415
+377,Bifidobacterium_bifidum_PRL2010,GCF_000165905.1,Bifidobacterium bifidum PRL2010,2214656
+378,Coprococcus_eutactus_ATCC_27759,GCF_000154425.1,Coprococcus eutactus ATCC 27759,3102087
+379,Haemophilus_sputorum_CCUG_13788,GCF_000238795.1,Haemophilus sputorum CCUG 13788,2143543
+380,Clostridium_spiroforme_DSM_1552,GCF_000154805.1,Thomasclavelia spiroformis DSM 1552,2507485
+381,Bacteroides_eggerthii_DSM_20697,GCF_000155815.1,Bacteroides eggerthii DSM 20697,4157980
+382,Succinatimonas_hippei_YIT_12066,GCF_000188195.1,Succinatimonas hippei YIT 12066,2304990
+383,Collinsella_stercoris_DSM_13279,GCF_000156215.1,Collinsella stercoris DSM 13279,2399821
+384,Tannerella_forsythia_ATCC_43037,GCF_001006485.1,Tannerella forsythia,3281748
+385,Lysinibacillus_sphaericus_C3_41,GCF_000017965.1,Lysinibacillus sphaericus C3-41,4817463
+386,Clostridium_hylemonae_DSM_15053,GCF_000156515.1,[Clostridium] hylemonae DSM 15053,3885459
+387,Clostridium_scindens_ATCC_35704,GCF_000154505.1,[Clostridium] scindens ATCC 35704,3619905
+388,Corynebacterium_amycolatum_SK46,GCF_000173655.1,Corynebacterium amycolatum SK46,2513912
+389,Streptococcus_mutans_ATCC_25175,GCF_000347875.1,Streptococcus mutans ATCC 25175,1999673
+390,Pseudomonas_aeruginosa_NCGM2_S1,GCF_000284555.1,Pseudomonas aeruginosa NCGM2.S1,6764661
+391,Bacillus_atrophaeus_ATCC_49822_1,GCF_000204845.1,Bacillus atrophaeus ATCC 49822-1,4126426
+392,Serratia_liquefaciens_ATCC_27592,GCF_000422085.1,Serratia liquefaciens ATCC 27592,5282719
+393,Ruminococcus_lactaris_ATCC_29176,GCF_000155205.1,[Ruminococcus] lactaris ATCC 29176,2729735
+394,Lactobacillus_gasseri_ATCC_33323,GCF_000014425.1,Lactobacillus gasseri ATCC 33323 = JCM 1131,1894360
+395,Bacteroides_salyersiae_WAL_10018,GCF_900624765.1,Bacteroides salyersiae WAL 10018 = DSM 18765 = JCM 12988,5831422
+396,Lactobacillus_fermentum_IFO_3956,GCF_000010145.1,Limosilactobacillus fermentum IFO 3956,2098685
+397,Prevotella_nanceiensis_DSM_19126,GCF_000379965.1,Hoylesella nanceiensis DSM 19126 = JCM 15639,2648555
+398,Veillonella_parvula_Te3_DSM_2008,GCF_000024945.1,Veillonella parvula DSM 2008,2132142
+399,Varibaculum_cambriense_DSM_15806,GCF_000420065.1,Varibaculum cambriense DSM 15806,2022936
+400,Streptococcus_salivarius_JIM8777,GCF_000253315.1,Streptococcus salivarius JIM8777,2210574
+401,Capnocytophaga_ochracea_DSM_7271,GCF_000023285.1,Capnocytophaga ochracea DSM 7271,2612925
+402,Enterobacter_aerogenes_KCTC_2190,GCF_000215745.1,Klebsiella aerogenes KCTC 2190,5280350
+403,Lachnospira_multipara_ATCC_19207,GCF_000424105.1,Lachnospira multipara ATCC 19207,2869885
+404,Clostridium_bolteae_ATCC_BAA_613,GCF_000154365.1,Enterocloster bolteae ATCC BAA-613,6556988
+405,Butyricicoccus_pullicaecorum_1_2,GCF_000398925.1,Butyricicoccus pullicaecorum 1.2,3299517
+406,Lactobacillus_johnsonii_DPC_6026,GCF_000204985.1,Lactobacillus johnsonii DPC 6026,1966342
+407,Prevotella_intermedia_ATCC_25611,GCF_000519165.1,Prevotella intermedia ATCC 25611 = DSM 20706,2568481
+408,Kytococcus_sedentarius_DSM_20547,GCF_000023925.1,Kytococcus sedentarius DSM 20547,2785024
+409,Clostridium_bartlettii_DSM_16795,GCF_000154445.1,Intestinibacter bartlettii DSM 16795,2971856
+410,Succinivibrio_dextrinosolvens_H5,GCF_000702045.1,Succinivibrio dextrinosolvens H5,2672352
+411,Clostridium_symbiosum_ATCC_14940,GCF_000466485.1,[Clostridium] symbiosum ATCC 14940,4810675
+412,Dorea_formicigenerans_ATCC_27755,GCF_000169235.1,Dorea formicigenerans ATCC 27755,3186031
+413,Clostridium_botulinum_A_str_Hall,GCF_000017045.1,Clostridium botulinum A str. Hall,3760560
+414,Schlesneria_paludicola_DSM_18645,GCF_000255655.1,Schlesneria paludicola DSM 18645,8639329
+415,Lactobacillus_animalis_KCTC_3501,GCF_000183825.1,Ligilactobacillus animalis KCTC 3501 = DSM 20602,1865693
+416,Cryptobacterium_curtum_DSM_15641,GCF_000023845.1,Cryptobacterium curtum DSM 15641,1617804
+417,Alistipes_indistinctus_YIT_12060,GCF_000231275.1,Alistipes indistinctus YIT 12060,2850978
+418,Listeria_monocytogenes_SLCC_2540,GCF_000306905.1,Listeria monocytogenes SLCC2540,2976958
+419,Prevotella_timonensis_CRIS_5C_B1,GCF_000177055.1,Hoylesella timonensis CRIS 5C-B1,2796067
+420,Listeria_monocytogenes_SLCC_7179,GCF_000306985.1,Listeria monocytogenes SLCC7179,2882234
+421,Leuconostoc_argentinum_KCTC_3773,GCF_000179875.1,Leuconostoc lactis KCTC 3773,1720683
+422,Ochrobactrum_anthropi_ATCC_49188,GCF_000017405.1,Brucella anthropi ATCC 49188,5205777
+423,Leminorella_grimontii_ATCC_33999,GCF_000735425.1,Leminorella grimontii ATCC 33999 = DSM 5078,4235612
+424,Listeria_monocytogenes_SLCC_2378,GCF_000307615.1,Listeria monocytogenes SLCC2378,2941360
+425,Yersinia_kristensenii_ATCC_33638,GCF_000173715.1,Yersinia kristensenii ATCC 33638,5042394
+426,Prevotella_nigrescens_ATCC_33563,GCF_000220235.1,Prevotella nigrescens ATCC 33563,2612230
+427,Bacteroides_finegoldii_DSM_17565,GCF_000156195.1,Bacteroides finegoldii DSM 17565,4881901
+428,Streptococcus_anginosus_1_2_62CV,GCF_000186545.1,Streptococcus anginosus 1_2_62CV,1815537
+429,Mogibacterium_timidum_ATCC_33093,GCF_000525775.1,Mogibacterium timidum ATCC 33093,1806210
+430,Providencia_rustigianii_DSM_4541,GCF_000156395.1,Providencia rustigianii DSM 4541,3965844
+431,Lactobacillus_ruminis_ATCC_25644,GCF_000225845.1,Ligilactobacillus ruminis ATCC 25644,2069085
+432,Dyadobacter_fermentans_DSM_18053,GCF_000023125.1,Dyadobacter fermentans DSM 18053,6967790
+433,Raoultella_planticola_ATCC_33531,GCF_000735435.1,Raoultella planticola ATCC 33531,5668028
+434,Abiotrophia_defectiva_ATCC_49176,GCF_000160075.2,Abiotrophia defectiva ATCC 49176,2041839
+435,Eubacterium_desmolans_ATCC_43058,GCF_000701665.1,Agathobaculum desmolans ATCC 43058,2643795
+436,Bacteroides_stercoris_ATCC_43183,GCF_900624775.1,Bacteroides stercoris ATCC 43183,4223171
+437,Brevibacillus_brevis_NBRC_100599,GCF_000010165.1,Brevibacillus brevis NBRC 100599,6296436
+438,Yokenella_regensburgei_ATCC_43003,GCF_000239335.1,Yokenella regensburgei ATCC 43003,4680108
+439,Bacteroides_ureolyticus_DSM_20703,GCF_000374605.1,Campylobacter ureolyticus DSM 20703,1740135
+440,Methanobrevibacter_ruminantium_M1,GCF_000024185.1,Methanobrevibacter ruminantium M1,2937203
+441,Escherichia_fergusonii_ATCC_35469,GCF_000026225.1,Escherichia fergusonii ATCC 35469,4643861
+442,Fusobacterium_ulcerans_ATCC_49185,GCF_900683735.1,Fusobacterium ulcerans ATCC 49185,3839419
+443,Pseudobutyrivibrio_ruminis_AD2017,GCF_000424305.1,Pseudobutyrivibrio ruminis AD2017,2911787
+444,Lactobacillus_crispatus_125_2_CHN,GCF_000162255.1,Lactobacillus crispatus 125-2-CHN,2130375
+445,Lactobacillus_hilgardii_ATCC_8290,GCF_000159315.1,Lentilactobacillus hilgardii DSM 20176 = ATCC 8290,2619588
+446,Stenotrophomonas_rhizophila_PCA13,GCF_001704155.1,Stenotrophomonas rhizophila,4198652
+447,Ochrobactrum_intermedium_LMG_3301,GCF_000182645.1,Brucella intermedia LMG 3301,4725392
+448,Sutterella_wadsworthensis_3_1_45B,GCF_000186505.1,Sutterella wadsworthensis 3_1_45B,2958117
+449,Bacteroides_coprophilus_DSM_18228,GCF_000157915.1,Phocaeicola coprophilus DSM 18228 = JCM 13818,3855443
+450,Streptococcus_peroris_ATCC_700780,GCF_000187585.1,Streptococcus peroris ATCC 700780,1633153
+451,Eubacterium_ventriosum_ATCC_27560,GCF_000153885.1,Eubacterium ventriosum ATCC 27560,2869695
+452,Trabulsiella_guamensis_ATCC_49490,GCF_000734965.1,Trabulsiella guamensis ATCC 49490,4929751
+453,Flavonifractor_plautii_ATCC_29863,GCF_000239295.1,Flavonifractor plautii ATCC 29863,3813599
+454,Clostridium_sporogenes_ATCC_15579,GCF_000155085.1,Clostridium sporogenes ATCC 15579,4102125
+455,Anaerococcus_vaginalis_ATCC_51170,GCF_000163295.1,Anaerococcus vaginalis ATCC 51170,1875286
+456,Listeria_monocytogenes_FSL_R2_561,GCF_000168575.2,Listeria monocytogenes FSL R2-561,2973801
+457,Propionibacterium_acnes_KPA171202,GCF_000008345.1,Cutibacterium acnes KPA171202,2560265
+458,Clostridium_glycolicum_ATCC_14880,GCF_000373865.1,Terrisporobacter glycolicus ATCC 14880 = DSM 1288,3993563
+459,Yersinia_pseudotuberculosis_YPIII,GCF_000834375.1,Yersinia pseudotuberculosis YPIII,4689436
+460,Enterococcus_caccae_ATCC_BAA_1240,GCF_000407145.1,Enterococcus caccae ATCC BAA-1240,3551822
+461,Lactobacillus_amylovorus_GRL_1112,GCF_000182855.2,Lactobacillus amylovorus GRL 1112,2126664
+462,Roseburia_inulinivorans_DSM_16841,GCF_000174195.1,Roseburia inulinivorans DSM 16841,4048462
+463,Mitsuokella_jalaludinii_DSM_13811,GCF_000702905.1,Mitsuokella jalaludinii DSM 13811,2412558
+464,Lactobacillus_helveticus_DPC_4571,GCF_000015385.1,Lactobacillus helveticus DPC 4571,2080931
+465,Helicobacter_pullorum_MIT_98_5489,GCF_000155495.1,Helicobacter pullorum MIT 98-5489,1919070
+466,Clostridium_clariflavum_DSM_19732,GCF_000237085.1,Acetivibrio clariflavus DSM 19732,4897678
+467,Sphingomonas_paucimobilis_HER1398,GCF_000416985.1,Sphingobacterium paucimobilis HER1398,5126359
+468,Clostridium_clostridioforme_CM201,GCF_000371405.1,[Clostridium] clostridioforme CM201,5586179
+469,Escherichia_hermannii_NBRC_105704,GCF_000248015.1,Atlantibacter hermannii NBRC 105704,4495280
+470,Bacillus_licheniformis_ATCC_14580,GCF_000008425.1,Bacillus licheniformis DSM 13 = ATCC 14580,4222645
+471,Oceanobacillus_picturae_strain_S1,GCF_000612865.1,Oceanobacillus picturae,3675175
+472,Parabacteroides_merdae_ATCC_43184,GCF_000154105.1,Parabacteroides merdae ATCC 43184,4431877
+473,Ruminococcus_gauvreauii_DSM_19829,GCF_000425525.1,Ruminococcus gauvreauii DSM 19829,4094278
+474,Pseudomonas_monteilii_NBRC_103158,GCF_000730605.1,Pseudomonas monteilii NBRC 103158 = DSM 14164,6299985
+475,Yersinia_frederiksenii_ATCC_33641,GCF_000168015.1,Yersinia frederiksenii ATCC 33641,4885341
+476,Veillonella_ratti_ACS_216_V_Col6b,GCF_000315505.1,Veillonella seminalis ACS-216-V-Col6b,2286294
+477,Peptoniphilus_lacrimalis_DSM_7455,GCF_000378725.1,Peptoniphilus lacrimalis DSM 7455,1849103
+478,Peptoniphilus_indolicus_ATCC_29427,GCF_000227315.1,Peptoniphilus indolicus ATCC 29427,2101630
+479,Streptococcus_equi_subsp_equi_4047,GCF_000026585.1,Streptococcus equi subsp. equi 4047,2253793
+480,Clostridium_cellobioparum_DSM_1351,GCF_000621505.1,Ruminiclostridium cellobioparum DSM 1351 = ATCC 15832,6123559
+481,Clostridium_paraputrificum_AGR2156,GCF_000424025.1,Clostridium paraputrificum AGR2156,3556514
+482,Clostridium_perfringens_ATCC_13124,GCF_000013285.1,Clostridium perfringens ATCC 13124,3256683
+483,Streptococcus_infantis_ATCC_700779,GCF_000260755.1,Streptococcus infantis ATCC 700779,1857230
+484,Methanosphaera_stadtmanae_DSM_3091,GCF_000012545.1,Methanosphaera stadtmanae DSM 3091,1767403
+485,Alloprevotella_tannerae_ATCC_51259,GCF_000159995.1,Alloprevotella tannerae ATCC 51259,2582919
+486,Anaerococcus_hydrogenalis_DSM_7454,GCF_000173355.1,Anaerococcus hydrogenalis DSM 7454,1889366
+487,Lactobacillus_fermentum_ATCC_14931,GCF_000159215.1,Limosilactobacillus fermentum ATCC 14931,1796949
+488,Fusobacterium_periodonticum_2_1_31,GCF_000158215.3,Fusobacterium periodonticum 2_1_31,2472857
+489,Bacteroides_oleiciplenus_YIT_12058,GCF_000315485.1,Bacteroides oleiciplenus YIT 12058,7071115
+490,Corynebacterium_striatum_ATCC_6940,GCF_000159135.1,Corynebacterium striatum ATCC 6940,2724288
+491,Clostridium_methoxybenzovorans_SR3,GCF_000421505.1,Lacrimispora indolis SR3,7085377
+492,Collinsella_intestinalis_DSM_13280,GCF_000156175.1,Collinsella intestinalis DSM 13280,1804297
+493,Pediococcus_acidilactici_DSM_20284,GCF_000146325.1,Pediococcus acidilactici DSM 20284,1929627
+494,Prevotella_conceptionensis_9403948,GCF_000312305.1,Prevotella conceptionensis 9403948,3931643
+495,Clostridium_tyrobutyricum_DSM_2637,GCF_000359585.1,Clostridium tyrobutyricum DSM 2637 = ATCC 25755 = JCM 11008,3010696
+496,Faecalibacterium_prausnitzii_M21_2,GCF_000154385.1,Faecalibacterium prausnitzii M21/2,3126983
+497,Staphylococcus_pettenkoferi_VCU012,GCF_000260275.1,Staphylococcus pettenkoferi VCU012,2454960
+498,Granulicatella_adiacens_ATCC_49175,GCF_000160675.1,Granulicatella adiacens ATCC 49175,1923088
+499,Actinomyces_urogenitalis_DSM_15434,GCF_000159035.1,Actinomyces urogenitalis DSM 15434,2614023
+500,Bifidobacterium_thermophilum_RBL67,GCF_000347695.1,Bifidobacterium thermophilum RBL67,2291643
+501,Aggregatibacter_aphrophilus_NJ8700,GCF_001188835.1,Aggregatibacter aphrophilus NJ8700,2313256
+502,Lactobacillus_vaginalis_ATCC_49540,GCF_000159435.1,Limosilactobacillus vaginalis DSM 5837 = ATCC 49540,1806246
+503,Campylobacter_jejuni_jejuni_81_176,GCF_000015525.1,Campylobacter jejuni subsp. jejuni 81-176,1699052
+504,Campylobacter_hominis_ATCC_BAA_381,GCF_000017585.1,Campylobacter hominis ATCC BAA-381,1714951
+505,Faecalibacterium_prausnitzii_SL3_3,GCF_000209855.1,Faecalibacterium prausnitzii SL3/3,3165876
+506,Pseudomonas_oleovorans_MOIL14HWK12,GCF_000510765.1,Ectopseudomonas oleovorans MOIL14HWK12,5003883
+507,Acidaminococcus_intestini_RyC_MR95,GCF_000230275.1,Acidaminococcus intestini RyC-MR95,2487765
+508,Streptococcus_cristatus_ATCC_51100,GCF_000222765.1,Streptococcus cristatus ATCC 51100,1994424
+509,Collinsella_aerofaciens_ATCC_25986,GCF_000169035.1,Collinsella aerofaciens ATCC 25986,2439869
+510,Ruminococcus_callidus_ATCC_2776001,GCF_000468015.1,Ruminococcus callidus ATCC 27760,3070687
+511,Bacteroides_plebeius_M12_DSM_17135,GCF_003458595.1,Phocaeicola plebeius,4094220
+512,Brevundimonas_bacteroides_DSM_4726,GCF_000701445.1,Brevundimonas bacteroides DSM 4726,3220465
+513,Lactobacillus_ultunensis_DSM_16047,GCF_001436305.1,Lactobacillus ultunensis DSM 16047,2161766
+514,Bifidobacterium_dentium_ATCC_27678,GCF_000172135.1,Bifidobacterium dentium ATCC 27678,2642081
+515,Cloacibacillus_evryensis_DSM_19522,GCF_000585335.1,Cloacibacillus evryensis DSM 19522,3488364
+516,Parabacteroides_gordonii_DSM_23371,GCF_000969825.1,Parabacteroides gordonii MS-1 = DSM 23371,6755772
+517,Dyadobacter_beijingensis_DSM_21582,GCF_000382205.1,Dyadobacter beijingensis DSM 21582,7374547
+518,Acinetobacter_calcoaceticus_PHEA_2,GCF_000191145.1,Acinetobacter pittii PHEA-2,3862530
+519,Lactobacillus_helveticus_DSM_20075,GCF_000160855.1,Lactobacillus helveticus DSM 20075 = CGMCC 1.1877,1808667
+520,Veillonella_atypica_ACS_049_V_Sch6,GCF_000179735.1,Veillonella atypica ACS-049-V-Sch6,2053871
+521,Brevibacterium_massiliense_5401308,GCF_000285915.1,Brevibacterium ravenspurgense 5401308 = CCUG 53855,2349262
+522,Bifidobacterium_gallicum_DSM_20093,GCF_000771165.1,Bifidobacterium gallicum DSM 20093 = LMG 11596,1989850
+523,Bifidobacterium_animalis_lactis_V9,GCF_000092765.1,Bifidobacterium animalis subsp. lactis V9,1944050
+524,Fusobacterium_mortiferum_ATCC_9817,GCF_003019315.1,Fusobacterium mortiferum ATCC 9817,2716766
+525,Escherichia_coli_O157_H7_str_Sakai,GCF_000008865.2,Escherichia coli O157:H7 str. Sakai,5594605
+526,Cronobacter_sakazakii_ATCC_BAA_894,GCF_000017665.1,Cronobacter sakazakii ATCC BAA-894,4530777
+527,Pediococcus_pentosaceus_ATCC_25745,GCF_000014505.1,Pediococcus pentosaceus ATCC 25745,1832387
+528,Granulicatella_elegans_ATCC_700633,GCF_000162475.2,Granulicatella elegans ATCC 700633,1741661
+529,Faecalibacterium_prausnitzii_A2_165,GCF_000162015.1,Faecalibacterium duncaniae,3080849
+530,Streptococcus_pleomorphus_DSM_20574,GCF_000420345.1,Faecalicoccus pleomorphus DSM 20574,1992636
+531,Subdoligranulum_variabile_DSM_15176,GCF_000157955.1,Subdoligranulum variabile DSM 15176,3237471
+532,Lactobacillus_sakei_subsp_sakei_23K,GCF_000026065.1,Latilactobacillus sakei subsp. sakei 23K,1884661
+533,Capnocytophaga_granulosa_ATCC_51502,GCF_000411115.1,Capnocytophaga granulosa ATCC 51502,2740113
+534,Bacteroides_coprocola_M16_DSM_17136,GCF_000154845.1,Phocaeicola coprocola DSM 17136,4295617
+535,Bifidobacterium_angulatum_DSM_20098,GCF_000771205.1,Bifidobacterium angulatum DSM 20098 = JCM 7096,1993784
+536,Listeria_monocytogenes_Finland_1988,GCF_000168595.2,Listeria monocytogenes Finland 1998,2874431
+537,Parabacteroides_johnsonii_DSM_18315,GCF_000156495.1,Parabacteroides johnsonii DSM 18315,4612238
+538,Clostridium_saccharogumia_DSM_17460,GCF_000686665.1,Thomasclavelia saccharogumia DSM 17460,3141483
+539,Peptoniphilus_harei_ACS_146_V_Sch2b,GCF_000183565.1,Peptoniphilus harei ACS-146-V-Sch2b,1836030
+540,Clostridium_beijerinckii_NCIMB_8052,GCF_000016965.1,Clostridium beijerinckii NCIMB 8052,6000632
+541,Helicobacter_canadensis_MIT_98_5491,GCF_000162575.1,Helicobacter canadensis MIT 98-5491,1622996
+542,Capnocytophaga_sputigena_ATCC_33612,GCF_000173675.1,Capnocytophaga sputigena ATCC 33612,2997845
+543,Actinobacillus_pleuropneumoniae_L20,GCF_000015885.1,Actinobacillus pleuropneumoniae serovar 5b str. L20,2274482
+544,Bifidobacterium_scardovii_JCM_12489,GCF_001042635.1,Bifidobacterium scardovii JCM 12489 = DSM 13734,3158347
+545,Gordonia_rubripertincta_NBRC_101908,GCF_000327325.1,Gordonia rubripertincta NBRC 101908,5204225
+546,Parabacteroides_goldsteinii_dnLKV18,GCF_000403825.2,Parabacteroides goldsteinii dnLKV18,7066206
+547,Providencia_alcalifaciens_DSM_30120,GCF_000173415.1,Providencia alcalifaciens DSM 30120,4029346
+548,Bifidobacterium_stercoris_DSM_24849,GCF_000741415.1,Bifidobacterium adolescentis JCM 15918,2304613
+549,Fusobacterium_gonidiaformans_3_1_5R,GCF_000158235.1,Fusobacterium gonidiaformans 3-1-5R,1848430
+550,Acinetobacter_haemolyticus_NIPH_261,GCF_000369085.1,Acinetobacter haemolyticus NIPH 261,3517917
+551,Dialister_succinatiphilus_YIT_11850,GCF_000242435.1,Dialister succinatiphilus YIT 11850,2457811
+552,Bifidobacterium_bifidum_NCIMB_41171,GCF_000273525.1,Bifidobacterium bifidum NCIMB 41171,2216395
+553,Staphylococcus_lugdunensis_HKU09_01,GCF_000025085.1,Staphylococcus lugdunensis HKU09-01,2658366
+554,Lactobacillus_reuteri_F275_JCM_1112,GCF_000010005.1,Limosilactobacillus reuteri subsp. reuteri JCM 1112,2039414
+555,Clostridium_bifermentans_ATCC_19299,GCF_000452225.2,Paraclostridium bifermentans ATCC 19299,3535241
+556,Clostridium_asparagiforme_DSM_15981,GCF_000158075.1,[Clostridium] asparagiforme DSM 15981,6224391
+557,Clostridium_acetobutylicum_ATCC_824,GCF_000008765.1,Clostridium acetobutylicum ATCC 824,4132880
+558,Blautia_hydrogenotrophica_DSM_10507,GCF_000157975.1,Blautia hydrogenotrophica DSM 10507,3565428
+559,Anaerotruncus_colihominis_DSM_17241,GCF_000154565.1,Anaerotruncus colihominis DSM 17241,3718888
+560,Lactobacillus_acidophilus_ATCC_4796,GCF_000159715.1,Lactobacillus acidophilus ATCC 4796,1999667
+561,Streptococcus_australis_ATCC_700641,GCF_000222745.1,Streptococcus australis ATCC 700641,2131358
+562,Microbacterium_gubbeenense_DSM_15944,GCF_000422745.1,Microbacterium gubbeenense DSM 15944,3017774
+563,Actinomyces_odontolyticus_ATCC_17982,GCF_000154225.1,Schaalia dentiphila ATCC 17982,2393758
+564,Bifidobacterium_longum_longum_BBMN68,GCF_000166315.1,Bifidobacterium longum subsp. longum BBMN68,2265943
+565,Bifidobacterium_longum_longum_JDM301,GCF_000092325.1,Bifidobacterium longum subsp. longum JDM301,2477838
+566,Streptococcus_thermophilus_LMG_18311,GCF_000011825.1,Streptococcus thermophilus LMG 18311,1796846
+567,Streptococcus_parasanguinis_ATCC_903,GCF_000187505.1,Streptococcus parasanguinis ATCC 903,2114592
+568,Lactobacillus_amylolyticus_DSM_11664,GCF_001435665.1,Lactobacillus amylolyticus DSM 11664,1537388
+569,Vibrio_parahaemolyticus_RIMD_2210633,GCF_000196095.1,Vibrio parahaemolyticus RIMD 2210633,5165770
+570,Exiguobacterium_aurantiacum_DSM_6208,GCF_000702585.1,Exiguobacterium aurantiacum DSM 6208,3037601
+571,Paenibacillus_daejeonensis_DSM_15491,GCF_000378385.1,Paenibacillus daejeonensis DSM 15491,7456872
+572,Enterococcus_saccharolyticus_DSM8903,GCF_000016545.1,Caldicellulosiruptor saccharolyticus DSM 8903,2970275
+573,Micromonospora_aurantiaca_ATCC_27029,GCF_000145235.1,Micromonospora aurantiaca ATCC 27029,7025559
+574,Paraprevotella_xylaniphila_YIT_11841,GCF_900683745.1,Paraprevotella xylaniphila YIT 11841,4125322
+575,Streptococcus_thoraltensis_DSM_12221,GCF_000380145.1,Streptococcus thoraltensis DSM 12221,2383584
+576,Acidaminococcus_fermentans_DSM_20731,GCF_000025305.1,Acidaminococcus fermentans DSM 20731,2329769
+577,Butyricimonas_synergistica_DSM_23225,GCF_000379665.1,Butyricimonas synergistica DSM 23225,4770778
+578,Parabacteroides_distasonis_ATCC_8503,GCF_900683725.1,Parabacteroides distasonis ATCC 8503,5212259
+579,Akkermansia_muciniphila_ATCC_BAA_835,GCF_000020225.1,Akkermansia muciniphila ATCC BAA-835,2664102
+580,Blautia_hansenii_VPI_C7_24_DSM_20583,GCF_002222595.2,Blautia hansenii DSM 20583,3065949
+581,Lactobacillus_coleohominis_101_4_CHN,GCF_000161935.1,Limosilactobacillus coleohominis 101-4-CHN,1704805
+582,Cetobacterium_somerae_ATCC_BAA_47401,GCF_000479045.1,Cetobacterium somerae ATCC BAA-474,3064648
+583,Prevotella_melaninogenica_ATCC_25845,GCF_000144405.1,Prevotella melaninogenica ATCC 25845,3168282
+584,Staphylococcus_haemolyticus_JCSC1435,GCF_000009865.1,Staphylococcus haemolyticus JCSC1435,2697861
+585,Ruminococcus_flavefaciens_ATCC_19208,GCF_000518765.1,Ruminococcus flavefaciens ATCC 19208,3581378
+586,Bacteroides_graminisolvens_DSM_19988,GCF_000428125.1,Bacteroides graminisolvens DSM 19988 = JCM 15093,3631399
+587,Propionibacterium_propionicum_F0230a,GCF_000277715.1,Arachnia propionica F0230a,3449360
+588,Corynebacterium_propinquum_DSM_44285,GCF_000375525.1,Corynebacterium propinquum DSM 44285,2458635
+589,Bifidobacterium_ruminantium_DSM_6489,GCF_000770925.1,Bifidobacterium ruminantium DSM 6489,2230329
+590,Propionibacterium_jensenii_DSM_20535,GCF_000425285.1,Acidipropionibacterium jensenii DSM 20535,3027984
+591,Enterobacter_cancerogenus_ATCC_35316,GCF_000155995.1,Enterobacter cancerogenus ATCC 35316,4633453
+592,Clostridium_sporosphaeroides_DSM_1294,GCF_000383295.1,Faecalispora sporosphaeroides DSM 1294,3173517
+593,Bifidobacterium_catenulatum_DSM_16992,GCF_000771025.1,Bifidobacterium catenulatum DSM 16992 = JCM 1194 = LMG 11043,2106356
+594,Bifidobacterium_animalis_lactis_AD011,GCF_000021425.1,Bifidobacterium animalis subsp. lactis AD011,1933695
+595,Actinomyces_naeslundii_str_Howell_279,GCF_000285995.1,Actinomyces naeslundii str. Howell 279,3114341
+596,Bifidobacterium_animalis_lactis_Bi_07,GCF_000277345.1,Bifidobacterium animalis subsp. lactis Bi-07,1938822
+597,Methanomassiliicoccus_luminyensis_B10,GCF_000308215.1,Methanomassiliicoccus luminyensis B10,2620233
+598,Morganella_morganii_subsp_morganii_KT,GCF_000286435.2,Morganella morganii subsp. morganii KT,3799539
+599,Microbacterium_oleivorans_NBRC_103075,GCF_001552475.1,Microbacterium oleivorans NBRC 103075,2975997
+600,Clostridium_botulinum_A_str_ATCC_3502,GCF_000063585.1,Clostridium botulinum A str. ATCC 3502,3903260
+601,Methanobrevibacter_smithii_ATCC_35061,GCF_000016525.1,Methanobrevibacter smithii ATCC 35061,1853160
+602,Achromobacter_xylosoxidans_NBRC_15126,GCF_001598595.1,Achromobacter xylosoxidans NBRC 15126 = ATCC 27061,6792737
+603,Campylobacter_fetus_subsp_fetus_82_40,GCF_000015085.1,Campylobacter fetus subsp. fetus 82-40,1773615
+604,Adlercreutzia_equolifaciens_DSM_19450,GCF_000478885.1,Adlercreutzia equolifaciens DSM 19450,2862526
+605,Fusobacterium_periodonticum_1_1_41FAA,GCF_000163935.1,Fusobacterium periodonticum 1_1_41FAA,2454647
+606,Bifidobacterium_coryneforme_DSM_20216,GCF_000771345.1,Bifidobacterium coryneforme DSM 20216,1741003
+607,Curtobacterium_flaccumfaciens_UCD_AKU,GCF_000349565.1,Curtobacterium flaccumfaciens UCD-AKU,3692614
+608,Bifidobacterium_mongoliense_DSM_21395,GCF_000771525.1,Bifidobacterium mongoliense DSM 21395,2154054
+609,Enterococcus_casseliflavus_ATCC_12755,GCF_000191365.1,Enterococcus casseliflavus ATCC 12755,3554837
+610,Staphylococcus_epidermidis_ATCC_12228,GCF_000007645.1,Staphylococcus epidermidis ATCC 12228,2564615
+611,Staphylococcus_sciuri_subsp_sciuri_Z8,GCF_000612145.1,Mammaliicoccus sciuri,2620868
+612,Bacteroides_thetaiotaomicron_VPI_5482,GCF_000011065.1,Bacteroides thetaiotaomicron VPI-5482,6293399
+613,Lactobacillus_rhamnosus_GG_ATCC_53103,GCF_000011045.1,Lacticaseibacillus rhamnosus GG,3005051
+614,Cellulosilyticum_lentocellum_DSM_5427,GCF_000178835.2,Cellulosilyticum lentocellum DSM 5427,4714237
+615,Clostridium_ramosum_VPI_0427_DSM_1402,GCF_000154485.1,Thomasclavelia ramosa DSM 1402,3234795
+616,Peptostreptococcus_stomatis_DSM_17678,GCF_000147675.1,Peptostreptococcus stomatis DSM 17678,1988044
+617,Streptococcus_pseudopneumoniae_IS7493,GCF_000221985.1,Streptococcus pseudopneumoniae IS7493,2195458
+618,Actinomyces_turicensis_ACS_279_V_Col4,GCF_000296505.1,Schaalia turicensis ACS-279-V-Col4,1951528
+619,Porphyromonas_endodontalis_ATCC_35406,GCF_000174815.1,Porphyromonas endodontalis ATCC 35406,2064508
+620,Anaerofustis_stercorihominis_DSM_17244,GCF_000154825.1,Anaerofustis stercorihominis DSM 17244,2284603
+621,Clostridium_botulinum_A_str_ATCC_19397,GCF_000017025.1,Clostridium botulinum A str. ATCC 19397,3863450
+622,Weissella_paramesenteroides_ATCC_33313,GCF_000160575.1,Weissella paramesenteroides ATCC 33313,1962173
+623,Barnesiella_intestinihominis_YIT_11860,GCF_000296465.1,Barnesiella intestinihominis YIT 11860,3433706
+624,Brachybacterium_paraconglomeratum_LC44,GCF_000233655.1,Brachybacterium paraconglomeratum LC44,3784483
+625,Enterococcus_faecalis_OG1RF_ATCC_47077,GCF_000172575.2,Enterococcus faecalis OG1RF,2739625
+626,Corynebacterium_ammoniagenes_DSM_20306,GCF_001941425.1,Corynebacterium ammoniagenes DSM 20306,2790185
+627,Methyloversatilis_universalis_Fam50001,GCF_000478565.1,Methyloversatilis universalis Fam500,4220164
+628,Bacteroides_intestinalis_341_DSM_17393,GCF_000172175.1,Bacteroides intestinalis DSM 17393,6052596
+629,Propionibacterium_granulosum_DSM_20700,GCF_000463665.1,Cutibacterium granulosum DSM 20700,2128234
+630,Campylobacter_jejuni_jejuni_NCTC_11168,GCF_000009085.1,Campylobacter jejuni subsp. jejuni NCTC 11168 = ATCC 700819,1641481
+631,Acinetobacter_radioresistens_NIPH_2130,GCF_000368885.1,Acinetobacter radioresistens NIPH 2130,3158774
+632,Helicobacter_winghamensis_ATCC_BAA_430,GCF_000158455.1,Helicobacter winghamensis ATCC BAA-430,1654865
+633,Arcanobacterium_haemolyticum_DSM_20595,GCF_000092365.1,Arcanobacterium haemolyticum DSM 20595,1986154
+634,Lactococcus_lactis_subsp_lactis_Il1403,GCF_000006865.1,Lactococcus lactis subsp. lactis Il1403,2365589
+635,Staphylococcus_simulans_ACS_120_V_Sch1,GCF_000314755.2,Staphylococcus simulans ACS-120-V-Sch1,2639907
+636,Bacteroides_cellulosilyticus_DSM_14838,GCF_000158035.1,Bacteroides cellulosilyticus DSM 14838,6726268
+637,Bifidobacterium_longum_longum_JCM_1217,GCF_000196555.1,Bifidobacterium longum subsp. longum JCM 1217,2385164
+638,Peptostreptococcus_anaerobius_DSM_2949,GCF_000381525.1,Peptostreptococcus anaerobius VPI 4330 = DSM 2949,2106103
+639,Clostridium_hiranonis_TO_931_DSM_13275,GCF_000156055.1,Peptacetobacter hiranonis DSM 13275,2423348
+640,Fusobacterium_gonidiaformans_ATCC_25563,GCF_003019695.1,Fusobacterium gonidiaformans ATCC 25563,1678881
+641,Escherichia_coli_str_K_12_substr_MG1655,GCF_003627195.1,Escherichia coli str. K-12 substr. MG1655,4639694
+642,Faecalibacterium_cf_prausnitzii_KLE1255,GCF_000166035.1,Faecalibacterium cf. prausnitzii KLE1255,2926561
+643,Campylobacter_jejuni_jejuni_ICDCCJ07004,GCF_000355845.1,Campylobacter jejuni subsp. jejuni ICDCCJ07004,1695092
+644,Bifidobacterium_adolescentis_ATCC_15703,GCF_000010425.1,Bifidobacterium adolescentis ATCC 15703,2089645
+645,Porphyromonas_asaccharolytica_DSM_20707,GCF_000212375.1,Porphyromonas asaccharolytica DSM 20707,2186370
+646,Lactobacillus_reuteri_SD2112_ATCC_55730,GCF_000159455.2,Limosilactobacillus reuteri SD2112,2316838
+647,Listeria_monocytogenes_J0161_FSL_R2_499,GCF_000168635.2,Listeria monocytogenes J0161,3000464
+648,Bifidobacterium_longum_infantis_157F_NC,GCF_000196575.1,Bifidobacterium longum subsp. infantis 157F,2408831
+649,Corynebacterium_aurimucosum_ATCC_700975,GCF_000022905.1,Corynebacterium aurimucosum ATCC 700975,2819226
+650,Methylobacterium_radiotolerans_JCM_2831,GCF_000019725.1,Methylobacterium radiotolerans JCM 2831,6899110
+651,Bifidobacterium_breve_UCC2003_NCIMB8807,GCF_000220135.1,Bifidobacterium breve UCC2003,2422684
+652,Staphylococcus_hominis_subsp_hominis_C80,GCF_000183685.1,Staphylococcus hominis subsp. hominis C80,2258417
+653,Corynebacterium_tuberculostearicum_SK141,GCF_000175635.1,Corynebacterium tuberculostearicum SK141,2372261
+654,Staphylococcus_equorum_subsp_equorum_Mu2,GCF_000297455.1,Staphylococcus equorum subsp. equorum Mu2,2927171
+655,Corynebacterium_kroppenstedtii_DSM_44385,GCF_000023145.1,Corynebacterium kroppenstedtii DSM 44385,2446804
+656,Bifidobacterium_longum_longum_ATCC_55813,GCF_000003135.1,Bifidobacterium longum subsp. longum ATCC 55813,2372858
+657,Lactobacillus_salivarius_HO66_ATCC_11741,GCF_001435955.1,Ligilactobacillus salivarius DSM 20555 = ATCC 11741,1982601
+658,Bifidobacterium_longum_longum_CCUG_52486,GCF_000155415.1,Bifidobacterium longum subsp. infantis CCUG 52486,2453376
+659,Bifidobacterium_kashiwanohense_DSM_21854,GCF_000741605.1,Bifidobacterium catenulatum subsp. kashiwanohense JCM 15439 = DSM 21854,2307960
+660,Enterococcus_phoeniculicola_ATCC_BAA_412,GCF_000407505.1,Enterococcus phoeniculicola ATCC BAA-412,3910972
+661,Geobacillus_stearothermophilus_ATCC_7953,GCF_000705495.1,Geobacillus stearothermophilus ATCC 7953,2787229
+662,Bifidobacterium_animalis_lactis_DSM_10140,GCF_004154565.1,Bifidobacterium animalis subsp. lactis,1919213
+663,Klebsiella_pneumoniae_pneumoniae_MGH78578,GCF_000016305.1,Klebsiella pneumoniae subsp. pneumoniae MGH 78578,5694894
+664,Candidatus_Nitrososphaera_gargensis_Ga9_2,GCF_000303155.1,Candidatus Nitrososphaera gargensis Ga9.2,2833868
+665,Odoribacter_splanchnicus_1651_6_DSM_20712,GCF_000190535.1,Odoribacter splanchnicus DSM 20712,4392288
+666,Pseudoramibacter_alactolyticus_ATCC_23263,GCF_000185505.1,Pseudoramibacter alactolyticus ATCC 23263,2327229
+667,Serratia_marcescens_subsp_marcescens_Db11,GCF_000513215.1,Serratia marcescens subsp. marcescens Db11,5113802
+668,Fusobacterium_nucleatum_subsp_animalis_7_1,GCF_000158275.2,Fusobacterium animalis 7_1,2514029
+669,Ureaplasma_parvum_serovar_1_str_ATCC_27813,GCF_000171375.1,Ureaplasma parvum serovar 1 str. ATCC 27813,753674
+670,Clostridium_butyricum_E4_str_BoNT_E_BL5262,GCF_000182605.1,Clostridium butyricum E4 str. BoNT E BL5262,4758422
+671,Mycobacterium_avium_subsp_avium_ATCC_25291,GCF_000174035.1,Mycobacterium avium subsp. avium ATCC 25291,4857995
+672,Bifidobacterium_longum_infantis_ATCC_15697,GCF_002076025.1,Bifidobacterium longum subsp. infantis,2579732
+673,Clostridium_botulinum_E1_str_BoNT_E_Beluga,GCF_000175335.1,Clostridium botulinum E1 str. 'BoNT E Beluga',3999201
+674,Parasutterella_excrementihominis_YIT_11859,GCF_000205025.1,Parasutterella excrementihominis YIT 11859,2831540
+675,Lactobacillus_salivarius_salivarius_UCC118,GCF_000008925.1,Ligilactobacillus salivarius UCC118,2133977
+676,Listeria_monocytogenes_serotype_7_SLCC_2482,GCF_000210795.2,Listeria monocytogenes serotype 7 str. SLCC2482,2986689
+677,Corynebacterium_glucuronolyticum_ATCC_51867,GCF_000156595.1,Corynebacterium glucuronolyticum ATCC 51867,2784539
+678,Bifidobacterium_animalis_lactis_CNCM_I_2494,GCF_000220885.1,Bifidobacterium animalis subsp. lactis CNCM I-2494,1943113
+679,Gordonibacter_pamelaeae_7_10_1_bT_DSM_19378,GCF_000210055.1,Gordonibacter pamelaeae 7-10-1-b,3329559
+680,Bifidobacterium_pseudocatenulatum_DSM_20438,GCF_000771445.1,Bifidobacterium pseudocatenulatum DSM 20438 = JCM 1200 = LMG 10505,2284490
+681,Propionibacterium_acidipropionici_ATCC_4875,GCF_000310065.1,Acidipropionibacterium acidipropionici ATCC 4875,3656170
+682,Ureibacillus_thermosphaericus_str_Thermo_BF,GCF_000284835.1,Ureibacillus thermosphaericus str. Thermo-BF,2846106
+683,Marvinbryantia_formatexigens_I_52_DSM_14469,GCF_900102475.1,Marvinbryantia formatexigens,4516103
+684,Aneurinibacillus_aneurinilyticus_ATCC_12856,GCF_000466385.1,Aneurinibacillus aneurinilyticus ATCC 12856,5302959
+685,Holdemania_filiformis_VPI_J1_31B_1_DSM_12042,GCF_000157995.1,Holdemania filiformis DSM 12042,3803745
+686,Fusobacterium_nucleatum_subsp_animalis_3_1_33,GCF_000162355.2,Fusobacterium animalis 3_1_33,2291720
+687,Phascolarctobacterium_succinatutens_YIT_12067,GCF_000188175.1,Phascolarctobacterium succinatutens YIT 12067,2121557
+688,Streptococcus_gordonii_str_Challis_substr_CH1,GCF_000017005.1,Streptococcus gordonii str. Challis substr. CH1,2196662
+689,Alcaligenes_faecalis_subsp_faecalis_NBRC_13111,GCF_001748345.1,Alcaligenes faecalis subsp. faecalis NBRC 13111,4042912
+690,Fusobacterium_nucleatum_subsp_vincentii_3_1_27,GCF_000163915.2,Fusobacterium vincentii 3_1_27,2190228
+691,Lactobacillus_paracasei_subsp_paracasei_8700_2,GCF_000155515.2,Lacticaseibacillus paracasei subsp. paracasei 8700:2,3025352
+692,Fusobacterium_nucleatum_subsp_vincentii_4_1_13,GCF_000158255.2,Fusobacterium vincentii 4_1_13,2269426
+693,Ureaplasma_urealyticum_serovar_8_str_ATCC_27618,GCF_000169535.1,Ureaplasma urealyticum serovar 8 str. ATCC 27618,881828
+694,Aeromonas_hydrophila_subsp_hydrophila_ATCC_7966,GCF_000014805.1,Aeromonas hydrophila subsp. hydrophila ATCC 7966,4744448
+695,Clostridium_saccharoperbutylacetonicum_N1_4_HMT,GCF_000340885.1,Clostridium saccharoperbutylacetonicum N1-4(HMT),6666445
+696,Salmonella_enterica_enterica_sv_Typhimurium_LT2,GCF_000006945.2,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,4951383
+697,Neisseria_elongata_subsp_glycolytica_ATCC_29315,GCF_000818035.1,Neisseria elongata subsp. glycolytica ATCC 29315,2256647
+698,Anaerobiospirillum_succiniciproducens_DSM_640001,GCF_000482845.1,Anaerobiospirillum succiniciproducens DSM 6400,3796093
+699,Anaerobaculum_hydrogeniformans_OS1_ATCC_BAA_1850,GCF_000160455.2,Acetomicrobium hydrogeniformans ATCC BAA-1850,2123925
+700,Fusobacterium_nucleatum_subsp_vincentii_3_1_36A2,GCF_000162235.2,Fusobacterium vincentii 3_1_36A2,2268272
+701,Lactobacillus_brevis_subsp_gravesensis_ATCC_27305,GCF_000159175.1,Lentilactobacillus hilgardii ATCC 27305,3077715
+702,Streptococcus_constellatus_subsp_pharyngis_SK1060,GCF_000474135.1,Streptococcus constellatus subsp. pharyngis SK1060 = CCUG 46377,1950566
+703,Yersinia_enterocolitica_subsp_enterocolitica_8081,GCF_000009345.1,Yersinia enterocolitica subsp. enterocolitica 8081,4683620
+704,Bifidobacterium_animalis_lactis_Bl_04_ATCC_SD5219,GCF_000022705.1,Bifidobacterium animalis subsp. lactis Bl-04,1938709
+705,Staphylococcus_aureus_subsp_aureus_USA300_FPR3757,GCF_000013465.1,Staphylococcus aureus subsp. aureus USA300_FPR3757,2917469
+706,Pseudoflavonifractor_capillosus_strain_ATCC_29799,GCF_000169255.2,Pseudoflavonifractor capillosus ATCC 29799,4241076
+707,Streptococcus_constellatus_subsp_constellatus_SK53,GCF_000474075.1,Streptococcus constellatus subsp. constellatus SK53,1855617
+708,Lactobacillus_paracasei_subsp_paracasei_ATCC_25302,GCF_000159495.1,Lacticaseibacillus paracasei subsp. paracasei ATCC 25302 = DSM 5622 = JCM 8130,2885587
+709,Lactobacillus_plantarum_subsp_plantarum_ATCC_14917,GCF_000143745.1,Lactiplantibacillus plantarum subsp. plantarum ATCC 14917 = JCM 1149 = CGMCC 1.2437,3198761
+710,Leuconostoc_mesenteroides_subsp_cremoris_ATCC_19254,GCF_000160595.1,Leuconostoc mesenteroides subsp. cremoris ATCC 19254,1638511
+711,Lactobacillus_delbrueckii_subsp_bulgaricus_ATCC_11842,GCF_000056065.1,Lactobacillus delbrueckii subsp. bulgaricus ATCC 11842 = JCM 1002,1864998
+712,Lactobacillus_delbrueckii_subsp_bulgaricus_ATCC_BAA_365,GCF_000014405.1,Lactobacillus delbrueckii subsp. bulgaricus ATCC BAA-365,1856951
+713,Lactobacillus_coryniformis_subsp_coryniformis_CECT_5711,GCF_000283115.1,Loigolactobacillus coryniformis subsp. coryniformis CECT 5711,2842941
+714,Desulfovibrio_desulfuricans_subsp_desulfuricans_DSM_642,GCF_000420465.1,Desulfovibrio desulfuricans DSM 642,3391683
+715,Bacillus_thuringiensis_serovar_thuringiensis_str_T01001,GCF_000161515.1,Bacillus thuringiensis serovar thuringiensis str. T01001,6298523
+716,Streptococcus_infantarius_subsp_infantarius_ATCC_BAA_102,GCF_000154985.1,Streptococcus infantarius subsp. infantarius ATCC BAA-102,1925087
+717,Streptococcus_gallolyticus_subsp_gallolyticus_ATCC_43143,GCF_000270145.1,Streptococcus gallolyticus subsp. gallolyticus ATCC 43143,2362241
+718,Bacillus_amyloliquefaciens_subsp_amyloliquefaciens_DC_12,GCF_000330805.1,Bacillus amyloliquefaciens DC-12,4011743
+719,Bifidobacterium_pseudolongum_subsp_Pseudolongum_DSM_20099,GCF_000771225.1,Bifidobacterium pseudolongum subsp. pseudolongum DSM 20099,1901000
+720,Propionibacterium_freudenreichii_subsp_shermanii_CIRM_BIA1,GCF_000091725.1,Propionibacterium freudenreichii subsp. shermanii CIRM-BIA1,2616384
+721,Staphylococcus_saprophyticus_subsp_saprophyticus_ATCC_15305,GCF_006094355.1,Staphylococcus saprophyticus subsp. saprophyticus ATCC 15305 = NCTC 7292,2599371
+722,Campylobacter_hyointestinalis_subsp_hyointestinalis_LMG_9260,GCF_001643955.1,Campylobacter hyointestinalis subsp. hyointestinalis LMG 9260,1753385
+723,Bifidobacterium_thermacidophilum_subsp_thermacidophilum_DSM_15837,GCF_000771005.1,Bifidobacterium thermacidophilum subsp. thermacidophilum DSM 15837,2220989
+724,Bacteroides_sp_20_3,GCF_000162535.1,Parabacteroides sp. 20_3,5722201
+725,Dietzia_cinnamea_P4,GCF_000186325.1,Dietzia cinnamea P4,3555295
+726,Coprobacillus_sp_D7,GCF_000158555.2,Coprobacillus sp. D7,3514630
+727,Clostridium_sp_SS2_1,GCF_000154545.1,Clostridium sp. SS2/1,3141381
+728,Enterococcus_sp_7L76,GCF_000210115.1,Enterococcus faecalis,2935498
+729,Bacteroides_sp_3_1_19,GCF_000163655.1,Bacteroides sp. 3_1_19,5228027
+730,Bacteroides_sp_3_1_40A,GCF_000186105.1,Bacteroides sp. 3_1_40A,5439708
+731,Bacteroides_sp_2_1_33B,GCF_000162175.1,Bacteroides sp. 2_1_33B,4891699
+732,Bacillus_nealsonii_AAU1,GCF_000401235.1,Niallia nealsonii AAU1,4978389
+733,Bacteroides_sp_3_1_33FAA,GCF_000162195.1,Bacteroides sp. 3_1_33FAA,5382946
+734,Bacteroides_sp_4_3_47FAA,GCF_000158515.2,Bacteroides sp. 4_3_47FAA,5429825
+735,Eubacterium_siraeum_70_3,GCF_000209915.1,[Eubacterium] siraeum 70/3,2864137
+736,Bacteroides_sp_9_1_42FAA,GCF_000157075.2,Bacteroides sp. 9_1_42FAA,5614268
+737,Edwardsiella_tarda_FL6_60,GCF_000146305.1,Edwardsiella tarda FL6-60,3728801
+738,Ruminococcus_bromii_L2_63,GCF_900291485.1,Ruminococcus bromii L2-63,2238543
+739,Bacillus_mojavensis_RO_H_1,GCF_000245335.1,Bacillus mojavensis RO-H-1 = KCTC 3706,3957021
+740,Neisseria_flavescens_SK114,GCF_000175275.1,Neisseria flavescens SK114,2204114
+741,Proteus_penneri_ATCC_35198,GCF_000155835.1,Proteus penneri ATCC 35198,3747729
+742,Clostridium_leptum_DSM_753,GCF_000154345.1,[Clostridium] leptum DSM 753,3270109
+743,Pseudomonas_alcaliphila_34,GCF_000319815.1,Ectopseudomonas chengduensis,5428961
+744,Staphylococcus_warneri_SG1,GCF_000332735.1,Staphylococcus warneri SG1,2560716
+745,Ruminococcus_sp_5_1_39BFAA,GCF_000159975.2,Ruminococcus sp. 5_1_39BFAA,3930699
+746,Clostridiales_sp_1_7_47FAA,GCF_000155435.1,Clostridiales bacterium 1_7_47FAA,6514450
+747,Clostridium_nexile_DSM_1787,GCF_000156035.2,[Clostridium] nexile DSM 1787,3861016
+748,Lactobacillus_pentosus_KCA1,GCF_000271445.1,Lactiplantibacillus pentosus KCA1,3418123
+749,Brevibacillus_agri_BAB_2500,GCF_000328345.1,Brevibacillus agri BAB-2500,5386487
+750,Lactobacillus_jensenii_1153,GCF_000155915.2,Lactobacillus jensenii 1153,1737886
+751,Clostridium_viride_DSM_6836,GCF_000620945.1,[Clostridium] viride DSM 6836,2414448
+752,Streptococcus_pneumoniae_G54,GCF_000019825.1,Streptococcus pneumoniae G54,2078953
+753,Agrobacterium_tumefaciens_F2,GCF_000219665.1,Agrobacterium tumefaciens F2,5465705
+754,Coprococcus_comes_ATCC_27758,GCF_000155875.1,Coprococcus comes ATCC 27758,3238915
+755,Eubacterium_sulci_ATCC_35585,GCF_000526055.1,Eubacterium sulci ATCC 35585,1728669
+756,Brevundimonas_diminuta_470_4,GCF_000318405.1,Brevundimonas diminuta 470-4,3335922
+757,Eubacterium_brachy_ATCC_33089,GCF_000488855.1,Eubacterium brachy ATCC 33089,1543725
+758,Acinetobacter_lwoffii_WJ10621,GCF_000219275.1,Acinetobacter lwoffii WJ10621,3180031
+759,Bacillus_vallismortis_DV1_F_3,GCF_000245315.1,Bacillus vallismortis DV1-F-3,3871829
+760,Ruminococcaceae_bacterium_D16,GCF_000177015.3,Ruminococcaceae bacterium D16,3197155
+761,Prevotella_timonensis_4401737,GCF_000614005.1,Hoylesella timonensis 4401737 = DSM 22865 = JCM 15640,3116396
+762,Megamonas_hypermegale_ART12_1,GCF_000209975.1,Megamonas hypermegale ART12/1,2130333
+763,Eubacterium_siraeum_DSM_15702,GCF_000154325.1,[Eubacterium] siraeum DSM 15702,2695934
+764,Lysinibacillus_fusiformis_ZB2,GCF_000313955.2,Lysinibacillus fusiformis ZB2,4549529
+765,Lactococcus_raffinolactis_4877,GCF_000327305.1,Lactococcus raffinolactis 4877,2280761
+766,Butyrivibrio_fibrisolvens_16_4,GCF_000209815.1,Butyrivibrio fibrisolvens 16/4,3116873
+767,Prevotella_loescheii_DSM_19665,GCF_000613485.1,Hoylesella loescheii DSM 19665 = JCM 12249 = ATCC 15930,3475255
+768,Bacillus_cereus_AH187_F4810_72,GCF_000021225.1,Bacillus cereus AH187,5599857
+769,Eubacterium_cylindroides_T2_87,GCF_000210615.1,Faecalitalea cylindroides T2-87,1661182
+770,Ruminococcus_flavefaciens_FD_1,GCF_000174895.1,Ruminococcus flavefaciens FD-1,4573584
+771,Clostridium_sordellii_ATCC_9714,GCF_000444075.1,Paraclostridium sordellii ATCC 9714,3552922
+772,Eubacterium_saphenum_ATCC_49989,GCF_000161975.1,Eubacterium saphenum ATCC 49989,1084501
+773,Burkholderiales_bacterium_1_1_47,GCF_000144975.1,Burkholderiales bacterium 1_1_47,2614738
+774,Streptococcus_vestibularis_F0396,GCF_000180075.1,Streptococcus vestibularis F0396,2022289
+775,Cellulosimicrobium_cellulans_J36,GCF_000526595.1,Cellulosimicrobium cellulans J36,4252182
+776,Stenotrophomonas_maltophilia_D457,GCF_000284595.1,Stenotrophomonas maltophilia D457,4769156
+777,Lactobacillus_buchneri_ATCC_11577,GCF_000159195.1,Lentilactobacillus buchneri ATCC 11577,2858741
+778,Rhodococcus_rhodochrous_ATCC_21198,GCF_000517665.1,Rhodococcus rhodochrous ATCC 21198,6477549
+779,Clostridium_botulinum_F_str_230613,GCF_000092345.1,Clostridium botulinum F str. 230613,4010614
+780,Bacteroides_xylanisolvens_SD_CC_1b,GCF_000577295.1,Bacteroides xylanisolvens SD CC 1b,6484037
+781,Ruminococcus_champanellensis_18P13,GCF_001312825.1,Ruminococcus champanellensis 18P13 = JCM 17042,2511743
+782,Brochothrix_thermosphacta_DSM_20171,GCF_000525935.1,Brochothrix thermosphacta DSM 20171 = FSL F6-1036,2529115
+783,Catenibacterium_mitsuokai_DSM_15897,GCF_000173795.1,Catenibacterium mitsuokai DSM 15897,2671313
+784,Streptococcus_parauberis_KCTC_11537,GCF_000213825.1,Streptococcus parauberis KCTC 11537,2143887
+785,Bacteroides_pectinophilus_ATCC_43243,GCF_000155855.1,[Bacteroides] pectinophilus ATCC 43243,3025526
+786,Enterobacteriaceae_bacterium_9_2_54FAA,GCF_000185685.2,Enterobacteriaceae bacterium 9_2_54FAA,4497073
+787,Lachnospiraceae_bacterium_sp_8_1_57FAA,GCF_000185545.1,Lachnospiraceae bacterium 8_1_57FAA,2909170
+788,Lachnospiraceae_bacterium_sp_5_1_63FAA,GCF_000185525.1,Lachnospiraceae bacterium 5_1_63FAA,3029557
+789,Clostridium_methylpentosum_R2_DSM_5476,GCF_000158655.1,[Clostridium] methylpentosum DSM 5476,3406326
+790,Erysipelotrichaceae_bacterium_5_2_54FAA,GCF_000163515.2,Erysipelotrichaceae bacterium 5_2_54FAA,3137098
+791,Erysipelotrichaceae_bacterium_sp_3_1_53,GCF_000165065.1,Erysipelotrichaceae bacterium 3_1_53,4458363
+792,Fusobacterium_nucleatum_subsp_animalis_D11,GCF_000158535.2,Fusobacterium animalis D11,2348737
+793,Alcaligenes_faecalis_subsp_faecalis_NCIB_8687,GCF_000275465.1,Alcaligenes faecalis subsp. faecalis NCIB 8687,3899625
+794,Fusobacterium_nucleatum_subsp_nucleatum_ATCC_25586,GCF_000007325.1,Fusobacterium nucleatum subsp. nucleatum ATCC 25586,2174500
+795,Streptococcus_dysgalactiae_subsp_dysgalactiae_ATCC_27957,GCF_000188315.1,Streptococcus dysgalactiae subsp. dysgalactiae ATCC 27957,2136837
+796,Ruminococcus_sp_SR1_5,GCA_000209835.1,Ruminococcus sp. SR1/5,3511612
+797,Melainabacterium_MEL_A1,GCA_001765415.1,Candidatus Melainabacteria bacterium MEL.A1,1867336
+798,Ruminococcus_obeum_A2_162,GCA_000210015.1,Blautia obeum A2-162,3692227
+799,Ruminococcus_torques_L2_14,GCA_000210035.1,[Ruminococcus] torques L2-14,3277778
+800,Staphylococcus_capitis_CR0101,GCF_000499705.1,,2501972.0
+801,Faecalibacterium_prausnitzii_L2_6,GCA_000210735.1,Faecalibacterium prausnitzii L2-6,3248273
+802,Methyloversatilis_universalis_FAM5,GCF_000214035.1,,4234613.0
+803,Methylobacterium_mesophilicum_SR1_6_6,GCF_000364445.1,,6214449.0
+804,Bifidobacterium_animalis_lactis_BB_12,GCF_000025245.1,,1942198.0
+805,Mycobacterium_fortuitum_subsp_fortuitum_DSM_46621,GCF_001050075.1,,6300050.0
